@@ -1,0 +1,1571 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+ul {
+        list-style: none;
+
+}
+
+a {
+        text-decoration: none;
+}
+
+
+
+/* trabajando el header con @media queries*/
+
+/* Vista Mobile */
+       
+        header {
+                display: flex;
+                flex-direction: column;
+              background-image: url(../assets/img/tierra-universo.webp);
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+              
+                height:12vh;}
+
+               
+
+                .titulo-index {
+                        color: white;
+                        font-family: 'Michroma', sans-serif;
+                       
+                        font-size: 30px;
+                }
+                
+             
+                  ul {
+                        display: flex;
+                        justify-content: center;
+                      
+
+                      
+                         }
+                
+                li a { display: flex;
+                        justify-content: space-around;
+                         color: white;
+                        font-weight: 600;
+                        font-size: 10px;
+                        font-family: 'Michroma', sans-serif;
+                        margin: 2vw;
+                               
+                }
+/* comienzo del main */
+.titulo {
+
+        background-color: rgba(128, 128, 128, 0.322);
+        height: 6vh;
+        width:100%;
+ 
+
+ }
+.destacado {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+     
+}
+
+.titulo__destacado {
+
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 27px;
+        font-family: fantasy;
+        text-align: center;
+       
+        font-weight: 800;
+       
+}
+
+.noticia-1 {
+        
+      
+     
+        width: 100%;
+        height: 43vh;
+         
+}
+
+.noticia-1__titulo {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.noticia-1__image {
+        width: 100%;
+        height: 19vh;
+   
+
+
+
+}
+
+
+.noticia-1__description {
+        text-align: justify;
+        margin-top: 5px;
+}
+
+.noticia-2 {
+
+        
+      
+      
+        width:100%;
+        height: 43vh;
+         
+   
+       
+}
+
+.noticia-2__image {
+        width: 100%;
+        height: 19vh;
+       
+
+}
+.noticia-2__titulo {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.noticia-2__description {
+text-align: justify ;
+}
+
+
+.noticia-3 {  
+        
+        
+   
+      
+        width:100%;
+        height: 43vh;
+         
+        margin-top: 5px;
+       
+}
+
+.noticia-3__titulo {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.noticia-3__description {
+        text-align: justify ;
+}
+
+
+
+.noticia-3__image {
+        width: 100%;
+        height: 19vh;
+        
+
+
+}
+
+hr { display: none;}
+/* Seccion Latinoamerica */
+
+.latino-section-1 {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.latino-titulo {
+        background-color: rgba(128, 128, 128, 0.322);
+        height: 6vh;
+        width:100%;
+       
+}
+
+.latino__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 27px;
+        font-family: fantasy;
+        text-align: center;
+       
+        font-weight: 800;
+      
+}
+
+.latino__noticia-1 {
+       
+     
+      
+        width:100%;
+        height: 43vh;
+         
+ 
+      
+}
+
+.latino__image {
+        width: 100%;
+        height: 19vh;
+       
+
+}
+.latino__titulo-1{
+        text-align: center;
+        margin-top: 5px;
+ }
+
+.titulo-1__description {
+        text-align: justify ;
+}
+
+
+.latino__noticia-2 {
+        
+      
+      
+        width: 100vw;
+        height: 43vh;
+         
+        
+      
+}
+
+.latino__titulo-2 {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.titulo-2__description {
+        text-align: justify ;
+ }
+.latino__noticia-3 {
+       
+       
+      
+        width: 100vw;
+        height: 43vh;
+         
+        margin-top: 10px;
+ 
+}
+
+.latino__titulo-3 {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.titulo-3__description {
+        text-align: justify ;
+       
+ }
+
+.latino__noticia-4 {
+        
+     
+      
+        width: 100vw;
+        height: 43vh;
+         
+      
+       
+}
+.latino__titulo-4 {
+        text-align: center;
+        width: 100%;
+        margin-top: 5px;
+        
+}
+
+.titulo-4__description{
+        margin-top: 5px;
+        margin-bottom: auto
+
+ }
+aside { display: none}
+
+.banner-2__publicidad {
+      display: none;
+
+}
+/* comienzo del footer */
+
+footer {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+       
+        justify-content: space-evenly;
+        width: 100%;
+   
+        background-image: url(../assets/img/universo.webp);
+}
+        
+.container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width:60%;
+        align-items: baseline;
+}
+
+.container__ciencia {
+        color: white;
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       
+        
+}
+
+.ciencia__h3 {
+       
+        color: white;
+        font-size: 35px;
+}
+
+.section-2__footer { 
+        display: flex;
+        flex-direction: column;
+}
+
+
+.container-nav__ul li a {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: flex-start
+    
+}
+
+.newsletter {
+        display: flex;
+        justify-content: space-around;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: baseline;
+        color: white;
+        font-size: 1.3em;
+
+}
+
+.newsletter__h4{ 
+        margin-bottom: 5px;
+        font-size: 22px;
+}
+
+
+.form__suscribete {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 5px;
+        font-size: 18px;
+}
+
+
+/* Vista Tablet */
+@media (min-width: 768px) {
+        header {
+                display: flex;
+                flex-direction: column;
+              background-image: url(../assets/img/tierra-universo.webp);
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+              
+                height:12vh;}
+
+               
+
+                .titulo-index {
+                        color: white;
+                        font-family: 'Michroma', sans-serif;
+                       
+                        font-size: 43px;
+                }
+                
+             
+                  ul {
+                        display: flex;
+                        justify-content: center;
+                      
+
+                      
+                         }
+                
+                li a { display: flex;
+                        justify-content: space-around;
+                         color: white;
+                        font-weight: 400;
+                        font-size: 15px;
+                        font-family: 'Michroma', sans-serif;
+                        margin: 2vw;
+                               
+                }
+/* comienzo del main */
+.titulo {
+
+        background-color: rgba(128, 128, 128, 0.322);
+        height: 6vh;
+        width:100%;
+       
+
+ }
+.destacado {
+        display: grid;
+        grid-template-columns:repeat(2,auto);
+        grid-template-rows: 30vh repeat(2, auto);
+        gap: 5px;
+        align-items: baseline;
+     
+     
+        
+}
+
+        
+.titulo__destacado {
+
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 35px;
+        font-family: fantasy;
+        text-align: center;
+       
+        font-weight: 800;
+
+}
+main { display: flex;
+       flex-wrap: wrap;}
+  .destacado__article { grid-column: span 2; }     
+.noticia-1 {
+            
+       width: 100%;
+       height:100%;
+       
+}
+
+.noticia-1__titulo {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.noticia-1__image {
+        width: 100%;
+        height: 19vh;
+
+}
+
+.noticia-1__description {
+        text-align: justify;
+        margin-top: 5px;
+}
+
+.noticia-2 {
+     
+        width:100%;
+        height: 100%;
+       
+}
+
+.noticia-2__image {
+        width: 100%;
+        height: 19vh;
+        
+}
+.noticia-2__titulo {
+        text-align: center;
+        
+}
+
+.noticia-2__description {
+text-align: justify ;
+}
+
+
+.noticia-3 {  
+        
+   
+        width:100%;
+        height: 100%;
+       
+       
+}
+
+.noticia-3__titulo {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.noticia-3__description {
+        text-align: justify ;
+}
+
+
+
+.noticia-3__image {
+        width: 100%;
+        height: 19vh;
+      
+
+
+}
+
+hr { display: none;}
+/* Seccion Latinoamerica */
+.latino-section-1 {
+        display: grid;
+        grid-template-columns:repeat(2,50%);
+        grid-template-rows: 30vh repeat(2,50% );
+        gap: 10px;
+        align-items: baseline;
+     }
+
+
+.latino-titulo {
+        background-color: rgba(128, 128, 128, 0.322);
+        height: 6vh;
+        width:100%;
+       
+}
+
+.latino__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 30px;
+        font-family: fantasy;
+        text-align: center;
+       
+        font-weight: 800;
+       
+}
+
+.latino__noticia-1 {
+    
+      
+        width:100%;
+        height:50%;
+         
+    
+      
+}
+
+.latino__image {
+        width: 100%;
+        height: 12vh;
+       
+
+}
+.latino__titulo-1{
+        text-align: center;
+        margin-top: 5px;
+ }
+
+.titulo-1__description {
+        text-align: justify ;
+}
+
+
+.latino__noticia-2 {
+        
+  
+      
+        width: 100%;
+        height:50%;
+        
+    
+    
+      
+}
+
+.latino__titulo-2 {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.titulo-2__description {
+        text-align: justify ;
+ }
+.latino__noticia-3 {
+       
+     
+      
+        width: 100%;
+        height: 100%;
+         
+    
+}
+
+.latino__titulo-3 {
+        text-align: center;
+      
+}
+
+.titulo-3__description {
+        text-align: justify ;
+       
+ }
+
+.latino__noticia-4 {
+        
+   
+      
+        width: 100%;
+        height: 100%;
+         
+  
+       
+}
+.latino__noticia-4 {
+        text-align: center;
+        margin-top: 5px;
+        
+}
+
+.titulo-4__description{
+        margin-top: 5px;
+
+ }
+aside { display: none}
+
+.banner-2__publicidad {
+      display: none;
+
+}
+/* comienzo del footer */
+
+footer {
+         grid-template-rows: repeat(2, 50%);
+        padding: 10px;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/universo.webp);
+        
+}
+.container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+ 
+        width: 100%;
+}
+
+.container__ciencia  {
+       justify-content: center;
+       grid-column: span 2;
+       color: white;
+       font-size: 40px;
+      
+       
+        
+}
+
+
+
+.section-2__footer { 
+        display: flex;
+        flex-direction: column;
+}
+
+.container-nav__ul {
+        display: flex;
+       flex-direction: column;
+       justify-content:space-evenly;
+      align-items: center;
+       margin:10px;
+       
+      
+       
+   
+}
+
+.container-nav__ul li a {
+        font-size: 14px;
+    
+}
+
+.newsletter {
+        display: flex;
+        justify-content: space-around;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: baseline;
+        color: white;
+        font-size: 1.3em;
+        margin-left: 20px;
+
+}
+
+.newsletter__h4{ 
+        margin-bottom: 5px;
+        font-size: 22px;
+}
+
+
+.form__suscribete {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 5px;
+        font-size: 18px;
+}
+      
+}
+
+
+/* Vista Desktop */
+
+@media (min-width: 1200px) {
+        
+/* header */ 
+
+header {
+        display: flex;
+        flex-direction: row;
+        background-image: url(../assets/img/tierra-universo.webp);
+        color: white;
+        padding: 15px;
+        justify-content: baseline;
+        width: 100%;
+        
+        height: 15vh;
+
+}
+
+nav {    display: flex;
+        justify-items: baseline;
+        width: 100%;
+        justify-content: flex-end;
+}
+
+ul {
+        display: flex;
+        justify-content: space-around;
+        
+}
+
+li a {
+        color: white;
+        font-weight: 900;
+        font-size: 15px;
+        font-family: 'Michroma', sans-serif;
+        
+
+}
+
+.titulo-index {  font-family: 'Michroma', sans-serif;
+                 font-size: 20px;}
+
+/* estructurando con grid para luego hacer responsive*/
+
+.contenedor-grid {
+        
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+                "header"
+                "main"
+                "banner"
+                "footer"
+               ;
+      
+}
+
+header { grid-area: header;}
+
+main { display: grid;
+        grid-area: main;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+                 
+                "section1 aside"
+                "section2 aside"                
+}
+
+
+.section-destacado {
+        grid-column: 1/3;
+}
+
+
+.destacado-section-1 {
+        grid-area: section1;
+}
+
+.destacado-section-2 {grid-area: section2;}
+
+aside {
+        grid-area: aside;
+}
+
+.aside-div {
+        grid-area: aside;
+}
+
+
+.banner-2 {grid-area: banner;}
+
+footer {grid-area: footer;}
+
+/* Comienzo del Main */
+
+.titulo-index {
+        color: white;
+        font-family: 'Michroma', sans-serif;
+        margin-left: 20px;
+        font-size: 2em;
+}
+
+
+.titulo {
+
+        background-color: rgba(128, 128, 128, 0.322);
+        height: 10vh;
+        width: 63vw;
+        
+
+
+}
+.destacado-section-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: baseline;
+     
+}
+
+.titulo__destacado {
+
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 30px;
+        font-family: fantasy;
+        margin-left: 50px;
+        font-weight: 800;
+      
+        margin-top: 10px;
+
+
+
+}
+
+
+
+.noticia-1 {
+        
+       
+        display: inline-block;
+        width: 91%;
+        height: 300px;
+        margin-top: 10px;
+       
+        margin-left: 40px;
+
+
+}
+
+.noticia-1__titulo {
+        text-align: center;
+        margin-top: 5px;
+}
+
+.noticia-1__image {
+        width: 100%;
+        height: 50vh;
+      
+
+
+
+}
+
+
+.noticia-1__description {
+        text-align: justify;
+        margin-top: 5px;
+        margin-bottom: 10px;
+}
+.destacado { display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: baseline;}
+
+.noticia-2 {
+
+        display: flex;
+        border: solid 2px rgba(155, 19, 19, 0.007);
+        border-radius: 20px;
+     
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+         
+        margin-left: 40px;
+        
+}
+
+.noticia-2__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.noticia-2__description {
+        text-align: justify;
+}
+
+
+.noticia-3 {
+        border: solid 2px black;
+        border-radius: 20px;
+   
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+}
+
+.noticia-3__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+/* Seccion Latinoamerica */
+
+.latino-section-1 {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.latino-titulo {
+        background-color: rgba(128, 128, 128, 0.322);
+        border-radius: 20px;
+        width: 855px;
+}
+
+.latino__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 25px;
+        font-family: fantasy;
+        margin-left: 50px;
+        font-weight: 800;
+}
+
+.latino__noticia-1 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 10px;
+        margin-left: 40px;
+}
+
+.latino__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.latino__noticia-2 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 10px;
+        margin-left: 20px;
+}
+
+.latino__noticia-3 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+}
+
+.latino__noticia-4 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+        margin-left: 20px;
+}
+
+/* Aside */
+.aside-div {
+        background-color: rgba(128, 128, 128, 0.322);
+
+        border-radius: 20px;
+        
+}
+
+.aside__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 25px;
+        font-family: fantasy;
+
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+
+
+aside {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 730px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+       margin-right: 10px;}
+
+
+.aside__noticia-2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+
+
+/* Banner Publicitario */
+
+.banner-2__publicidad {
+        width: 100%;
+        height: 150px;
+        display: block;
+}
+
+/* Comienzo Footer */
+
+
+footer {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        background-image: url(../assets/img/universo.webp);
+        align-items: baseline;
+}
+
+.container {
+        display: flex;
+        justify-content: space;
+        flex-direction: row;
+        width:100%;
+        align-items: baseline;
+}
+
+.container__ciencia {
+        color: white;
+}
+
+.container-nav__ul {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: flex-start;
+}
+.container-nav__ul li a { font-size: 12px;
+                          margin: 2px;
+                          font-weight: 900;}
+
+
+.ciencia__h3 {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 35px;
+}
+
+.ciencia-ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+}
+
+.newsletter {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: baseline;
+        color: white;
+        font-size: 1.3em;
+
+}
+.form__suscribete { display: flex;
+                flex-direction: row;}
+.form {
+        display: flex;
+
+        color: white;
+}
+
+    
+}
+
+
+
+
+
+
+/* comienzo seccion tecnologia */
+ .main-container { 
+        display: flex;
+        flex-direction: column;
+}
+
+.tecnologia__image {
+        width: 100%;
+        height: 300px;
+}
+
+.titulo-tecnologia {
+        background-color: rgba(128, 128, 128, 0.178);
+}
+
+.titulo__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 1.5em;
+        font-family: fantasy;
+        margin-left: 145px;
+        font-weight: 800;
+}
+
+.article-1 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.article-1__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.article-2 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.article-2__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.article-3 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 410px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.article-3__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.article-4 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 410px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.article-4__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.article-5 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 420px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.article-5__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+
+/* comienzo seccion ciencia */
+
+
+.ciencia__image {
+        width: 100%;
+        height: 300px;
+}
+
+.ciencia-titulo {
+        background-color: rgba(128, 128, 128, 0.178);
+}
+
+.ciencia__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 1.5em;
+        font-family: fantasy;
+        margin-left: 165px;
+        font-weight: 800;
+}
+
+.ciencia-1 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 380px;
+        margin-top: 20px;
+
+        margin-left: 40px;
+}
+
+.ciencia-1__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.ciencia-2 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.ciencia-2__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+
+.ciencia-3 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 380px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.ciencia-3__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+
+.ciencia-4 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 340px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.ciencia-4__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+
+.ciencia-5 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 380px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.ciencia-5__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+/* Comienzo seccion Nuestro Universo */
+.universo-titulo {
+        background-color: rgba(128, 128, 128, 0.178);
+}
+
+.universo__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 1.5em;
+        font-family: fantasy;
+        margin-left: 120px;
+        font-weight: 800;
+}
+
+.universo__image {
+        width: 100%;
+        height: 300px;
+}
+
+.universo-1 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 340px;
+        margin-top: 20px;
+
+        margin-left: 40px;
+}
+
+.universo-1__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.universo-2 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+
+        margin-left: 40px;
+}
+
+.universo-2__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.universo-3 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+
+        margin-left: 40px;
+}
+
+.universo-3__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.universo-4 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.universo-4__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.universo-5 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.universo-5__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+/*Comienzo seccion Business  */
+.business-titulo {
+        background-color: rgba(128, 128, 128, 0.178);
+}
+
+.business__h2 {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 1.5em;
+        font-family: fantasy;
+        margin-left: 160px;
+        font-weight: 800;
+}
+
+.business__image {
+        width: 100%;
+        height: 300px;
+}
+
+.business-1 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.business-1__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.business-2 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.business-2__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.business-3 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.business-3__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.business-4 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 380px;
+
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.business-4__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
+
+.business-5 {
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        display: inline-block;
+        width: 400px;
+        height: 350px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+}
+
+.business-5__image {
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+}
