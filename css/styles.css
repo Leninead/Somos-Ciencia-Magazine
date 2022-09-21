@@ -67,6 +67,40 @@ li a {
 
 
 
+header {
+        grid-area: header;
+}
+
+
+
+.section-destacado {
+        grid-column: 1/3;
+}
+
+.destacado-section-1 {
+        grid-area: section1;
+}
+
+.destacado-section-2 {
+        grid-area: section2;
+}
+
+aside {
+        grid-area: aside;
+}
+
+.aside-div {
+        grid-area: aside;
+}
+
+.banner-2 {
+        grid-area: banner;
+}
+
+footer {
+        grid-area: footer;
+}
+
 /* Comienzo del Main */
 @media (min-width: 1200px) {
         main { display: grid;
