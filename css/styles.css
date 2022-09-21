@@ -63,6 +63,18 @@ li a {
 
 }
 
+@media (min-width: 1200px) {
+        li a {
+                color: white;
+                font-weight: 900;
+                font-size: 10px;
+                font-family: 'Michroma', sans-serif;
+                justify-content: flex-end;
+
+        }
+}
+
+
 /* estructurando con grid para luego hacer responsive*/
 
 
@@ -103,18 +115,23 @@ footer {
 
 /* Comienzo del Main */
 @media (min-width: 1200px) {
-        main { display: grid;
+        main {
+                display: grid;
                 grid-area: main;
                 grid-template-columns: 3fr 1fr;
                 grid-template-rows: repeat(2, auto);
                 grid-template-areas:
-                         
-                        "section1 aside"
-              
-                  "section2 aside" }               
-        .destacado { grid-area: section1;}
 
- }
+                        "section1 aside"
+
+                        "section2 aside"
+        }
+
+        .destacado {
+                grid-area: section1;
+        }
+
+}
 
 
 .titulo {
@@ -145,7 +162,7 @@ footer {
                 display: grid;
                 grid-template-columns: repeat(2, auto);
                 grid-template-rows: repeat(2, auto);
-                gap: 10px ;
+                gap: 10px;
         }
 
 }
@@ -161,20 +178,21 @@ footer {
 
 
 }
+
 @media (min-width: 685px) {
         .noticia-1 {
                 height: 240px;
-              
-                
-         }
+
+
+        }
 }
 
 
 @media (min-width: 685px) {
         .destacado__article {
                 grid-column: span 2;
-                
-         }
+
+        }
 }
 
 .noticia-1__titulo {
@@ -200,13 +218,14 @@ footer {
         width: 100%;
         height: 300px;
         margin-bottom: 30px;
-     
+
 }
+
 @media (min-width: 685px) {
         .noticia-2 {
                 margin-bottom: 45px;
-                
-         }
+
+        }
 }
 
 .noticia-2__image {
@@ -248,19 +267,20 @@ footer {
 /* Seccion Latinoamerica */
 @media (min-width: 685px) {
         .latino-section-1 {
-                display: grid;  
-                grid-template-columns: repeat(2,auto);
-                grid-template-rows: repeat(2,auto); 
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(2, auto);
                 gap: 10px;
-                       
-         }
-         .latino__noticia-1 {
 
-             margin-bottom: 2em;
         }
-        
-         
-       
+
+        .latino__noticia-1 {
+
+                margin-bottom: 2em;
+        }
+
+
+
 }
 
 .latino-titulo {
@@ -311,64 +331,65 @@ footer {
 @media (min-width: 685px) {
         .latino__noticia-2 {
                 margin-bottom: 1em;
-              
-         }
 
-.latino__titulo-2 {
-        text-align: center;
-}
+        }
 
-.titulo-2__description {
-        margin-top: 10px;
-}
+        .latino__titulo-2 {
+                text-align: center;
+        }
 
-.latino__noticia-3 {
-        width: 100%;
-        height: 300px;
-        margin-top: 20px;
-        margin-bottom: 1em;
+        .titulo-2__description {
+                margin-top: 10px;
+        }
 
-}
+        .latino__noticia-3 {
+                width: 100%;
+                height: 300px;
+                margin-top: 20px;
+                margin-bottom: 1em;
+
+        }
 
 }
 
 @media (min-width: 685px) {
         .latino__noticia-3 {
-           
-        margin-top: 3px;
+
+                margin-top: 3px;
         }
 
-              
-         
-
-.latino__titulo-3 {
-        text-align: center;
-}
-
-.titulo-3__description {
-        margin-top: 10px;
-
-
-}
-
-.latino__noticia-4 {
-        width: 100%;
-        height: 300px;
-        margin-top: 20px;
-}
 
 
 
-@media (min-width: 685px) {
-      .latino__noticia-4 {
-           
-        margin-top: 3px;
-       
+        .latino__titulo-3 {
+                text-align: center;
+        }
 
-              
-         }
+        .titulo-3__description {
+                margin-top: 10px;
+
+
+        }
+
+        .latino__noticia-4 {
+                width: 100%;
+                height: 300px;
+                margin-top: 20px;
+        }
+
+
+
+        @media (min-width: 685px) {
+                .latino__noticia-4 {
+
+                        margin-top: 3px;
+
+
+
+                }
         }
 }
+
 /* Aside */
 
 @media (min-width: 320px) {
@@ -382,8 +403,7 @@ footer {
 
 
         aside {
-                border: solid 2px black;
-                border-radius: 20px;
+
                 padding: 10px;
                 display: inline-block;
                 width: 400px;
@@ -411,12 +431,20 @@ footer {
                 text-align: center;
         }
 
-
+        .aside__noticia-1 {
+                text-align: center;
+                margin-bottom: 10px;
+        }
 
         .aside__noticia-2 {
-                margin-top: 20px;
-                margin-bottom: 20px;
+                text-align: center;
+                margin-bottom: 10px;
         }
+
+        .aside__noticia-3 {
+                text-align: center;
+        }
+
 }
 
 
@@ -434,6 +462,7 @@ footer {
         .banner-2 {
                 display: block;
         }
+
         .banner-2__publicidad {
                 width: 100%;
                 height: 150px;
@@ -511,114 +540,147 @@ footer {
 
 
 /* comienzo seccion tecnologia */
+
 .main-container {
         display: flex;
         flex-direction: column;
 }
 
+@media (min-width: 685px) {
+        .main-container {
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                grid-template-rows: repea(4,auto);
+                gap: 10px;
+        }
+        .titulo-tecnologia {
+                grid-column: span 2;
+        }
+        .section-1 {
+                grid-column: span 2;
+         }
+       
+}
+
 .tecnologia__image {
         width: 100%;
-        height: 300px;
+        height: 8em;
 }
 
 .titulo-tecnologia {
         background-color: rgba(128, 128, 128, 0.178);
+
 }
 
 .titulo__h2 {
         color: rgba(0, 0, 0, 0.555);
         font-size: 1.5em;
         font-family: fantasy;
-        margin-left: 145px;
+        text-align: center;
         font-weight: 800;
+
+
 }
 
 .article-1 {
-        border: solid 2px black;
-        border-radius: 20px;
-        padding: 10px;
-        display: inline-block;
-        width: 400px;
-        height: 350px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+
+        width: 100%;
+        height: 290px;
+
+
+
 }
 
 .article-1__image {
         width: 100%;
-        height: 150px;
-        border-radius: 20px;
+        height: 200px;
+
+}
+
+.article-1__h2 {
+        text-align: center;
+        font-size: 1.3em;
 }
 
 .article-2 {
-        border: solid 2px black;
-        border-radius: 20px;
-        padding: 10px;
-        display: inline-block;
-        width: 400px;
-        height: 350px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+        width: 100%;
+        height: 270px;
+
 }
 
 .article-2__image {
         width: 100%;
         height: 150px;
-        border-radius: 20px;
+}
+
+.article-2__h2 {
+        text-align: center;
+        font-size: 1.3em;
+}
+
+.article-2__description {
+        text-align: center;
 }
 
 .article-3 {
-        border: solid 2px black;
-        border-radius: 20px;
-        padding: 10px;
-        display: inline-block;
-        width: 400px;
-        height: 410px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
 }
 
 .article-3__image {
         width: 100%;
         height: 150px;
-        border-radius: 20px;
+}
+
+.article-3__h2 {
+        text-align: center;
+        font-size: 1.3em;
+}
+
+.article-3__description {
+        text-align: center;
 }
 
 .article-4 {
-        border: solid 2px black;
-        border-radius: 20px;
-        padding: 10px;
-        display: inline-block;
-        width: 400px;
-        height: 410px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 12px;
 }
 
 .article-4__image {
         width: 100%;
         height: 150px;
-        border-radius: 20px;
+}
+
+.article-4__h2 {
+        text-align: center;
+        font-size: 1.3em;
+}
+
+.article-4__description {
+        text-align: center;
 }
 
 .article-5 {
-        border: solid 2px black;
-        border-radius: 20px;
-        padding: 10px;
-        display: inline-block;
-        width: 400px;
-        height: 420px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+        width: 100%;
+        height: 290px;
+
 }
 
 .article-5__image {
         width: 100%;
         height: 150px;
-        border-radius: 20px;
 }
 
+.article-5__h2 {
+        font-size: 1.3em;
+        text-align: center;
+}
+
+.article-5__description {
+        text-align: center;
+}
 
 /* comienzo seccion ciencia */
 
