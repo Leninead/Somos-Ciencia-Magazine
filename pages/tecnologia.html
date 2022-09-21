@@ -10,9 +10,10 @@
 </head>
 
 <body>
+  
     <header>
         <a href="../index.html">
-            <h1 class="titulo-index">Somos Ciencia</h1>
+            <h1>Somos Ciencia</h1>
         </a>
         <nav>
             <ul>
@@ -30,6 +31,7 @@
     <main>
 
         <div class="main-container">
+
             <div class="titulo-tecnologia">
                 <h2 class="titulo__h2">Tecnología</h2>
             </div>
@@ -154,40 +156,43 @@
     </main>
     <!-- Footer -->
     <footer>
-        <div class="container">
 
-            <div class="container__ciencia">
-                <h3 class="ciencia__h3">Somos Ciencia</h3>
+            <div class="container">
+
+                <div class="container__ciencia">
+                    <h3 class="ciencia__h3">Somos Ciencia</h3>
+                </div>
+               
+                    <div class="container-nav">
+                        <ul class="container-nav__ul">
+                            <li><a href="./pages/tecnologia.html" target="_blank">Tecnología</a></li>
+                            <li><a href="./pages/ciencia.html" target="_blank">Ciencia</a></li>
+                            <li><a href="./pages/nuestrouniverso.html" target="_blank">Nuestro Universo</a></li>
+                            <li><a href="./pages/business.html" target="_blank">Business</a></li>
+                        </ul>
+                    </div>
+            
+
+                <div class="newsletter">
+                    <h4 class="newsletter__h4">Suscribete a nuestro newsletter</h4>
+
+
+                    <form class="form__suscribete">
+                        <label for="fname">Nombre</label>
+                        <input type="text" id="fname" placeholder="Ejem: Lenin" value="Nombre">
+                        <label for="lname">Apellido</label>
+                        <input type="text" id="lname" placeholder="Ejem: Acosta" value="Apellido">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Ejem: Leninacosta5@gmail.com" value="Email">
+                        <label for="suscribete"></label>
+                        <input type="button" id="suscribete" value="Suscribete">
+                    </form>
+                </div>
+
+
             </div>
 
-            <div class="container-nav">
-                <ul class="container-nav__ul">
-                    <li><a href="./tecnologia.html" target="_blank">Tecnología</a></li>
-                    <li><a href="./ciencia.html" target="_blank">Ciencia</a></li>
-                    <li><a href="./nuestrouniverso.html" target="_blank">Nuestro Universo</a></li>
-                    <li><a href="./business.html" target="_blank">Business</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- Formulario Newsletter -->
-        <div class="newsletter">
-            <h4 class="newsletter__h4">Suscribete a nuestro newsletter</h4>
-
-
-            <form class="form__suscribete">
-                <label for="fname">Nombre</label>
-                <input type="email" id="fname" value="Nombre">
-                <label for="lname">Apellido</label>
-                <input type="text" id="lname" value="Apellido">
-                <label for="email">Email</label>
-                <input type="email" id="email" value="Email">
-                <label for="suscribete"></label>
-                <input type="button" id="suscribete" value="Suscribete">
-            </form>
-        </div>
-
-
-    </footer>
+        </footer>
 </body>
 
 </html>
