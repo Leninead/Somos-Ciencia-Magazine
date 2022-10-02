@@ -597,6 +597,7 @@ footer {
 }
 
 
+
 .container-nav__ul {
         display: flex;
         justify-content: space-between;
@@ -605,11 +606,7 @@ footer {
 }
 
 
-.ciencia-ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-}
+
 
 .newsletter {
         display: flex;
@@ -620,18 +617,6 @@ footer {
         font-size: 1.3em;
 
 }
-
-.form {
-        display: flex;
-
-        color: white;
-}
-
-
-
-
-
-
 
 
 /* comienzo seccion tecnologia */

@@ -1,0 +1,69 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repea(4, auto);
+        gap: 10px;
+    }
+}
+
+.titulo-tecnologia {
+    background-color: rgba(128, 128, 128, 0.178);
+    @include medium {
+        grid-column: span 2;
+    }
+}
+
+.section-1 {
+    @include medium {
+        grid-column: span 2;
+        height: 260px;
+    }
+
+    @include large {
+        @include boxshadow;
+
+    }
+
+
+}
+
+.section-2 {
+    @include large {
+        @include boxshadow;
+
+    }
+
+}
+
+.section-3 {
+    @include large {
+        @include boxshadow;
+
+    }
+
+}
+
+.section-4 {
+    @include large {
+        @include boxshadow;
+
+    }
+
+}
+
+.section-5 {
+    @include large {
+        @include boxshadow;
+
+    }
+
+}
+
+.titulo-tecnologia {
+    @include boxshadow;
+}
+

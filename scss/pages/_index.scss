@@ -1,0 +1,430 @@
+//Main
+
+main {
+    @include large {
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "section0 aside"
+            "section1 aside"
+
+            "section2 aside"
+    }
+
+}
+
+.titulo {
+    @include maintitle;
+
+    @include large {
+        grid-area: section0;
+        width: 50%;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+        height: 50px;
+        @include maintitle;
+    }
+
+    &__destacado {
+
+        @include h2title;
+
+    }
+
+}
+
+.destacado {
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+   
+}
+
+.destacado {
+    @include large {
+        grid-area: section1;
+    }
+}
+
+.destacado__article {
+    @include medium {
+        grid-column: span 2;
+    }
+
+
+}
+
+.noticia-1 {
+    @include articles();
+
+    @include medium {
+        height: 15rem;
+    }
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+
+    &__image {
+        @include images();
+
+        @include medium {
+            width: 100%;
+            height: 150px;
+        }
+
+    }
+
+    &__titulo {
+        @include title();
+    }
+
+    &__description {
+        @include description();
+    }
+}
+
+
+.noticia-2 {
+    @include articles(30px);
+
+    @include medium {
+        margin-bottom: 45px;
+    }
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+
+    &__image {
+        @include images();
+
+        @include large {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        }
+
+
+    }
+
+    &__titulo {
+        @include title();
+    }
+
+    &__description {
+        @include description();
+    }
+
+}
+
+.noticia-3 {
+    @include articles();
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+
+    &__image {
+        @include images;
+
+        @include large {
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        }
+
+
+
+    }
+
+    &__titulo {
+        @include title;
+    }
+
+    &__description {
+        @include description
+    }
+
+
+}
+
+//Seccion Latinoamerica//
+
+.latino-titulo {
+    @include maintitle;
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+       
+    }
+
+
+    &__h2 {
+        @include h2title;
+    }
+}
+
+.latino-section-1 {
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+    }
+}
+
+.latino__noticia-1 {
+    @include articles;
+
+    @include medium {
+        margin-bottom: 2em;
+    }
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+}
+
+.latino__titulo-1 {
+    @include title;
+
+}
+
+.titulo-1__description {
+    @include description;
+
+}
+
+
+.latino__noticia-2 {
+    @include articles;
+
+    @include medium {
+        margin-bottom: 2em;
+    }
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+}
+
+.latino__titulo-2 {
+    @include title;
+}
+
+.titulo-2__description {
+    @include description;
+}
+
+
+
+.latino__noticia-3 {
+    @include articles;
+
+    @include medium {
+        margin-bottom: 2em;
+    }
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+}
+
+.latino__titulo-3 {
+    @include title;
+}
+
+
+.titulo-3__description {
+    @include description;
+    }
+
+
+.latino__noticia-4 {
+    @include articles;
+
+    @include medium {
+        margin-bottom: 2em;
+    }
+
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+    }
+}
+
+
+.latino__titulo-4 {
+    @include title;
+}
+
+
+.titulo-4__description {
+    @include description;
+    }
+
+
+.latino__image {
+    @include images;
+
+
+}
+
+//Aside
+
+aside {
+    @include small {
+        display: none;
+    }
+}
+
+aside {
+    @include large {
+        padding: 10px;
+        display: inline-block;
+        width: 300px;
+        height: 780px;
+      margin: 40px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+}
+
+.aside__div {
+    @include large {
+
+
+        background-color: rgba(128, 128, 128, 0.322);
+
+        border-radius: 20px;
+    }
+
+
+}
+
+.aside__h2 {
+    @include large {
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 25px;
+        font-family: fantasy;
+
+        font-weight: 800;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.aside__noticia-1 {
+    @include large {
+        text-align: center;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+}
+
+.aside__noticia-2 {
+    @include large {
+        text-align: center;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+}
+
+.aside__noticia-3 {
+    @include large {
+        text-align: center;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+}
+
+.aside__noticia-4 {
+    @include large {
+        text-align: center;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+}
+
+.latino__image {
+    @include large {
+        width: 100%;
+        height: 9.5rem;
+    }
+}
+
+//Banner Publicitario
+
+.banner-2 {
+    @include small {
+        display: none;
+    }
+}
+
+.banner-2 {
+    @include large {
+        display: block;
+
+        &__publicidad {
+            width: 100%;
+            height: 150px;
+        }
+    }
+}
+
+//Footer
+
+footer {
+    display: flex;
+    padding: 5px;
+
+
+    height: 100%;
+    background-image: url(../assets/img/universo.webp);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    gap: 1em;
+
+    &__ciencia {
+        color: white;
+        font-size: 1.8rem;
+    }
+
+
+}
+
+.container-nav__ul li a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 1.2rem;
+
+
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: baseline;
+    color: white;
+    font-size: 1.3em;
+
+    &__h4 {
+        margin-bottom: 5px;
+    }
+}

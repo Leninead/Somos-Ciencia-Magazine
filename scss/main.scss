@@ -1,13 +1,17 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+
 
 @import "./base/reset";
 @import "./base/typography";
 
+@import "./components/card";
 @import "./components/buttons";
 @import "./components/carousel";
 
 @import "./layout/footer";
 @import "./layout/header";
+@import "./layout/grid";
 
 @import "./pages/business";
 @import "./pages/ciencia";
