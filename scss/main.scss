@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
-
 @import "./base/reset";
 @import "./base/typography";
 
@@ -9,14 +8,19 @@
 @import "./components/buttons";
 @import "./components/carousel";
 
-@import "./layout/footer";
 @import "./layout/header";
 @import "./layout/grid";
+@import "./layout/footer";
 
-@import "./pages/business";
-@import "./pages/ciencia";
+
 @import "./pages/index" ;
+@import "./pages/tecnologia";
+@import "./pages/ciencia";
 @import "./pages/nuestrouniverso";
-@import "./pages/tecnologia"
+@import "./pages/business";
+
+
+
+
 
 

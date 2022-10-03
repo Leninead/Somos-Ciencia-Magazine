@@ -12,6 +12,7 @@
 
 .titulo-tecnologia {
     background-color: rgba(128, 128, 128, 0.178);
+
     @include medium {
         grid-column: span 2;
     }
@@ -67,3 +68,82 @@
     @include boxshadow;
 }
 
+.tecnologia__image {
+    width: 100%;
+    height: 200px;
+}
+
+
+.titulo__h2 {
+    @include h2title;
+}
+
+
+.article-1 {
+    width: 100%;
+    height: 290px;
+
+    &__h2 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+}
+
+.article-2 {
+    width: 100%;
+    height: 270px;
+
+    &__h2 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+}
+
+.article-3 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+
+    &__h2 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    &__description {
+        text-align: center;
+    }
+}
+
+.article-4 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 12px;
+
+    &__h2 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    &__description {
+        text-align: center;
+    }
+}
+.article-5 {
+    width: 100%;
+    height: 290px;
+    &__h2 {
+      font-size: 1.3em;
+      text-align: center;
+    }
+    &__description {
+        text-align: center;
+    }
+  
+  }
+  

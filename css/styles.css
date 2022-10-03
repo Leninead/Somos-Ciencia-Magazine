@@ -684,7 +684,7 @@ footer {
 
 .tecnologia__image {
         width: 100%;
-        height: 8em;
+        height: 200px;
 }
 
 .titulo-tecnologia {
@@ -710,11 +710,7 @@ footer {
 }
 
 
-.article-1__image {
-        width: 100%;
-        height: 200px;
 
-}
 
 .article-1__h2 {
         text-align: center;
@@ -727,10 +723,7 @@ footer {
 
 }
 
-.article-2__image {
-        width: 100%;
-        height: 150px;
-}
+
 
 .article-2__h2 {
         text-align: center;
@@ -747,10 +740,6 @@ footer {
         margin-bottom: 10px;
 }
 
-.article-3__image {
-        width: 100%;
-        height: 150px;
-}
 
 .article-3__h2 {
         text-align: center;
@@ -767,10 +756,6 @@ footer {
         margin-bottom: 12px;
 }
 
-.article-4__image {
-        width: 100%;
-        height: 150px;
-}
 
 .article-4__h2 {
         text-align: center;
@@ -787,10 +772,7 @@ footer {
 
 }
 
-.article-5__image {
-        width: 100%;
-        height: 150px;
-}
+
 
 .article-5__h2 {
         font-size: 1.3em;
@@ -812,7 +794,7 @@ footer {
         .container-ciencia {
                 display: grid;
                 grid-template-columns: repeat(2, auto);
-                grid-template-rows: repea(4, auto);
+                grid-template-rows: repeat(4, auto);
                 gap: 10px;
         }
 
@@ -870,7 +852,7 @@ footer {
 
 }
 
-.ciencia-1 {
+.section-1 {
         width: 100%;
         height: 290px;
 
@@ -878,7 +860,7 @@ footer {
 
 
 
-.ciencia-2 {
+.section-2 {
         width: 100%;
         height: 290px;
 
@@ -886,7 +868,7 @@ footer {
 
 
 
-.ciencia-3 {
+.section-3 {
         width: 100%;
         height: 290px;
 
@@ -894,7 +876,7 @@ footer {
 
 
 
-.ciencia-4 {
+.section-4 {
         width: 100%;
         height: 290px;
 
@@ -902,7 +884,7 @@ footer {
 
 
 
-.ciencia-5 {
+.section-5 {
         width: 100%;
         height: 290px;
 
@@ -970,7 +952,7 @@ footer {
 
 }
 
-.universo-1 {
+.section-1 {
         width: 100%;
         height: 290px;
 
@@ -979,7 +961,7 @@ footer {
 
 
 
-.universo-2 {
+.section-2 {
         width: 100%;
         height: 290px;
 
@@ -987,14 +969,14 @@ footer {
 
 
 
-.universo-3 {
+.section-3 {
         width: 100%;
         height: 290px;
 
 }
 
 
-.universo-4 {
+.section-4 {
         width: 100%;
         height: 290px;
 
@@ -1002,7 +984,7 @@ footer {
 
 
 
-.universo-5 {
+.section-5 {
         width: 100%;
         height: 290px;
 
