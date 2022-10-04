@@ -36,9 +36,7 @@
 }
 
 .universo__image {
-    width: 100%;
-    height: 8em;
-
+    @include images;
 }
 
 .section-1 {
@@ -79,17 +77,12 @@
 
 }
 
-.universo__image {
-    width: 100%;
-    height: 200px;
-}
+
 
 .universo-1{
-    width: 100%;
-    height: 290px;
+    @include articles;
     &__h2 {
-        text-align: center;
-        font-size: 1.3em;
+        @include h2articles;
     }
     &__description {
         text-align: justify;
@@ -98,11 +91,9 @@
 }
 
 .universo-2{
-    width: 100%;
-    height: 290px;
+    @include articles;
     &__h2 {
-        text-align: center;
-        font-size: 1.3em;
+        @include h2articles;
     }
     &__description {
         text-align: justify;
@@ -111,11 +102,9 @@
 }
 
 .universo-3 {
-    width: 100%;
-    height: 290px;
+    @include articles;
     &__h2 {
-        text-align: center;
-        font-size: 1.3em;
+        @include h2articles;
     }
     &__description {
         text-align: justify;
@@ -124,11 +113,9 @@
 }
 
 .universo-4{
-    width: 100%;
-    height: 290px;
+    @include articles;
     &__h2 {
-        text-align: center;
-        font-size: 1.3em;
+        @include h2articles;
     }
     &__description {
         text-align: justify;
@@ -137,11 +124,9 @@
 }
 
 .universo-5 {
-    width: 100%;
-    height: 290px;
+    @include articles;
     &__h2 {
-        text-align: center;
-        font-size: 1.3em;
+        @include h2articles;
     }
     &__description {
         text-align: justify;

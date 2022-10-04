@@ -47,6 +47,13 @@
     margin-bottom: $marginbottom;
 
 }
+@mixin h2articles {
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(75, 3, 75);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 @mixin images {
     width: 100%;

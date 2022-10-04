@@ -9,7 +9,7 @@ main {
         grid-template-areas:
             "section0 aside"
             "section1 aside"
-
+           
             "section2 aside"
     }
 
@@ -82,7 +82,7 @@ main {
     }
 
     &__titulo {
-        @include title();
+        @include h2articles;
     }
 
     &__description {
@@ -114,7 +114,7 @@ main {
     }
 
     &__titulo {
-        @include title();
+        @include h2articles;
     }
 
     &__description {
@@ -143,7 +143,7 @@ main {
     }
 
     &__titulo {
-        @include title;
+        @include h2articles;
     }
 
     &__description {
@@ -168,7 +168,12 @@ main {
         @include h2title;
     }
 }
-
+.latino__h2 {
+    @include h2title; 
+    @include large {
+      margin: 10px;
+    }
+}
 .latino-section-1 {
     @include medium {
         display: grid;
@@ -192,7 +197,7 @@ main {
 }
 
 .latino__titulo-1 {
-    @include title;
+    @include h2articles;
 
 }
 
@@ -216,7 +221,7 @@ main {
 }
 
 .latino__titulo-2 {
-    @include title;
+    @include h2articles;
 }
 
 .titulo-2__description {
@@ -239,7 +244,7 @@ main {
 }
 
 .latino__titulo-3 {
-    @include title;
+    @include h2articles;
 }
 
 
@@ -263,7 +268,7 @@ main {
 
 
 .latino__titulo-4 {
-    @include title;
+    @include h2articles;
 }
 
 
@@ -278,87 +283,6 @@ main {
 
 }
 
-//Aside
-
-aside {
-    @include small {
-        display: none;
-    }
-}
-
-aside {
-    @include large {
-        padding: 10px;
-        display: inline-block;
-        width: 300px;
-        height: 780px;
-      margin: 40px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
-    }
-}
-
-.aside__div {
-    @include large {
-
-
-        background-color: rgba(128, 128, 128, 0.322);
-
-        border-radius: 20px;
-    }
-
-
-}
-
-.aside__h2 {
-    @include large {
-        color: rgba(0, 0, 0, 0.555);
-        font-size: 25px;
-        font-family: fantasy;
-
-        font-weight: 800;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-}
-
-.aside__noticia-1 {
-    @include large {
-        text-align: center;
-        margin-bottom: 15px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
-    }
-}
-
-.aside__noticia-2 {
-    @include large {
-        text-align: center;
-        margin-bottom: 15px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
-    }
-}
-
-.aside__noticia-3 {
-    @include large {
-        text-align: center;
-        margin-bottom: 15px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
-    }
-}
-
-.aside__noticia-4 {
-    @include large {
-        text-align: center;
-        margin-bottom: 15px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
-    }
-}
-
-.latino__image {
-    @include large {
-        width: 100%;
-        height: 9.5rem;
-    }
-}
 
 //Banner Publicitario
 
