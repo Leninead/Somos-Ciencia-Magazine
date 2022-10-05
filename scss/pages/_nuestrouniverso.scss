@@ -12,7 +12,7 @@
 }
 
 .universo-titulo {
-    background-color: rgba(128, 128, 128, 0.178);
+    @include maintitle;
 
     @include medium {
         grid-column: span 2;
@@ -20,6 +20,9 @@
 
     @include large {
         @include boxshadow;
+    }
+    .universo__h2 {
+        @include h2title;
     }
 
 }
@@ -31,9 +34,7 @@
     }
 }
 
-.universo__h2 {
-    @include h2title;
-}
+
 
 .universo__image {
     @include images;

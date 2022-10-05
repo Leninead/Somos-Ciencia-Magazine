@@ -11,7 +11,12 @@
 }
 
 .titulo-tecnologia {
-    background-color: rgba(128, 128, 128, 0.178);
+    @include maintitle;
+
+    .titulo__h2 {
+        @include h2title;
+    } 
+    
 
     @include medium {
         grid-column: span 2;
@@ -73,14 +78,6 @@
 }
 
 
-.titulo__h2 {
-    color: rgba(0, 0, 0, 0.555);
-    font-size: 30px;
-    font-family: fantasy;
-    text-align: center;
-    font-weight: 800;
-   
-}
 
 
 .article-1 {

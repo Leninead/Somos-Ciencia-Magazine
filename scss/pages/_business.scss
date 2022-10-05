@@ -11,11 +11,16 @@
 }
 
 .business-titulo{
-    background-color: rgba(128, 128, 128, 0.178);
+    @include maintitle;
+
     @include boxshadow;
+
     @include medium {
     grid-column: span 2;
     }
+    .business__h2 {
+        @include h2title;
+    } 
 }
 
 .section-1 {

@@ -28,13 +28,13 @@
 //Mixins del Main
 
 @mixin maintitle {
-    background-color: rgba(128, 128, 128, 0.322);
-    height: 5vh;
+    background-color: $color-secundario;
+    height: 7vh;
     width: 100%;
 }
 
 @mixin h2title {
-    color: rgba(0, 0, 0, 0.555);
+    color: $color-terciario;
     font-size: 30px;
     font-family: fantasy;
     text-align: center;
@@ -50,7 +50,7 @@
 @mixin h2articles {
     text-align: center;
     font-size: 1.3em;
-    color: rgb(75, 3, 75);
+    color: $color-primario;
     margin-top: 5px;
     margin-bottom: 5px;
 }
