@@ -9,7 +9,7 @@ main {
         grid-template-areas:
             "section0 aside"
             "section1 aside"
-           
+
             "section2 aside"
     }
 
@@ -42,7 +42,7 @@ main {
         grid-template-rows: repeat(2, auto);
         gap: 10px;
     }
-   
+
 }
 
 .destacado {
@@ -160,20 +160,24 @@ main {
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
-       
+
     }
 
 
     &__h2 {
+
         @include h2title;
     }
 }
+
 .latino__h2 {
-    @include h2title; 
+    @include h2title;
+
     @include large {
-      margin: 10px;
+        margin: 10px;
     }
 }
+
 .latino-section-1 {
     @include medium {
         display: grid;
@@ -250,7 +254,7 @@ main {
 
 .titulo-3__description {
     @include description;
-    }
+}
 
 
 .latino__noticia-4 {
@@ -274,7 +278,7 @@ main {
 
 .titulo-4__description {
     @include description;
-    }
+}
 
 
 .latino__image {

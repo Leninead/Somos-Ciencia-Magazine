@@ -1,6 +1,7 @@
 .container-business {
     display: flex;
     flex-direction: column;
+
     @include medium {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -10,17 +11,18 @@
 
 }
 
-.business-titulo{
+.business-titulo {
     @include maintitle;
 
     @include boxshadow;
 
     @include medium {
-    grid-column: span 2;
+        grid-column: span 2;
     }
+
     .business__h2 {
         @include h2title;
-    } 
+    }
 }
 
 .section-1 {
@@ -74,6 +76,7 @@
 .business__image {
     @include images;
 }
+
 .business__h2 {
     @include h2title;
 }
@@ -85,10 +88,11 @@
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
-  
+
 
 }
 
@@ -104,6 +108,7 @@
     }
 
 }
+
 .business-3 {
     @include articles;
 
@@ -128,14 +133,16 @@
     }
 
 }
+
 .business-5 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
-  
-  }
-  
+
+}

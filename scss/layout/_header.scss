@@ -18,7 +18,10 @@ header {
         @include large{
             font-size: 50px;
         }
-
+        &:hover {
+            color: red;
+        }
+      
     }
 
     nav {

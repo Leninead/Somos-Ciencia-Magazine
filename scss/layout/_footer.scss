@@ -32,9 +32,14 @@ footer {
     align-items: flex-start;
     color: white;
     font-size: 1.2rem;
-
+    &:hover {
+        color: red;
+    }
+   
+  
 
 }
+
 
 .newsletter {
     display: flex;

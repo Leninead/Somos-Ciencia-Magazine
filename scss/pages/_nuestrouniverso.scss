@@ -21,6 +21,7 @@
     @include large {
         @include boxshadow;
     }
+
     .universo__h2 {
         @include h2title;
     }
@@ -80,22 +81,26 @@
 
 
 
-.universo-1{
+.universo-1 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
 
 }
 
-.universo-2{
+.universo-2 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
@@ -104,20 +109,24 @@
 
 .universo-3 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
 
 }
 
-.universo-4{
+.universo-4 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
@@ -126,9 +135,11 @@
 
 .universo-5 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }

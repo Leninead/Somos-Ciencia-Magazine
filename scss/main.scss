@@ -2,26 +2,14 @@
 @import "./utils/mixins";
 
 @import "./base/reset";
-@import "./base/typography";
-
-@import "./components/card";
-@import "./components/buttons";
-@import "./components/carousel";
 
 @import "./layout/header";
 @import "./layout/grid";
 @import "./layout/aside";
 @import "./layout/footer";
 
-
-@import "./pages/index" ;
+@import "./pages/index";
 @import "./pages/tecnologia";
 @import "./pages/ciencia";
 @import "./pages/nuestrouniverso";
 @import "./pages/business";
-
-
-
-
-
-

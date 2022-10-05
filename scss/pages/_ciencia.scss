@@ -20,6 +20,7 @@
     @include large {
         @include boxshadow;
     }
+
     .ciencia__h2 {
         @include h2title;
     }
@@ -78,9 +79,11 @@
 
 .ciencia-1 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
@@ -88,18 +91,23 @@
 
 .ciencia-2 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
 }
+
 .ciencia-3 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
@@ -107,9 +115,11 @@
 
 .ciencia-4 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
@@ -117,9 +127,11 @@
 
 .ciencia-5 {
     @include articles;
+
     &__h2 {
         @include h2articles;
     }
+
     &__description {
         text-align: justify;
     }
