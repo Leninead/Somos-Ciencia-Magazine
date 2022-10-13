@@ -12,6 +12,7 @@ main {
 
             "section2 aside"
     }
+    
 
 }
 
@@ -20,11 +21,11 @@ main {
 
     @include large {
         grid-area: section0;
-        width: 50%;
+        
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
-        margin: 10px;
+        margin-left: 40px;
         height: 50px;
-        @include maintitle;
+        @include maintitle ($width:91%);
     }
 
     &__destacado {
@@ -33,6 +34,11 @@ main {
 
     }
 
+}
+.titulo__destacado {
+    @include large {
+        width: 100%;
+    }
 }
 
 .destacado {
@@ -48,13 +54,18 @@ main {
 .destacado {
     @include large {
         grid-area: section1;
+        margin-left: 40px;
     }
+   
+  
 }
 
 .destacado__article {
     @include medium {
         grid-column: span 2;
     }
+    
+   
 
 
 }
@@ -69,6 +80,15 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles($width: 93%, $height:530px);
+        transition: all 400ms ease;
+          
+    }
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatey(2%);
+        }
     }
 
     &__image {
@@ -78,6 +98,9 @@ main {
             width: 100%;
             height: 150px;
         }
+        @include large {
+            height: 400px
+        }
 
     }
 
@@ -86,13 +109,16 @@ main {
     }
 
     &__description {
-        @include description();
+       
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        
     }
 }
 
 
 .noticia-2 {
-    @include articles(30px);
+    @include articles();
 
     @include medium {
         margin-bottom: 45px;
@@ -101,13 +127,30 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles($width:85%, $height:480px);
+        transition: all 400ms ease;
+        
     }
+
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatey(-2%);
+        }
+    }
+
+   
 
     &__image {
         @include images();
 
         @include large {
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+            height: 240px;
+            margin-bottom: 10px
+           
+            
+            
         }
 
 
@@ -119,6 +162,12 @@ main {
 
     &__description {
         @include description();
+        @include large {
+            line-height: 1.3;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        
+        }
     }
 
 }
@@ -129,13 +178,26 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles($width:85%, $height:480px);
+        transition: all 400ms ease;
+        
     }
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatey(-2%);
+        }
+    }
+
 
     &__image {
         @include images;
 
         @include large {
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+            height: 240px;
+            margin-bottom: 10px
+            
         }
 
 
@@ -147,7 +209,14 @@ main {
     }
 
     &__description {
-        @include description
+        @include description ();
+        @include large {
+            line-height: 1.3;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        
+        }
+
     }
 
 
@@ -160,6 +229,7 @@ main {
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        @include maintitle ($width:95%);
 
     }
 
@@ -168,6 +238,13 @@ main {
 
         @include h2title;
     }
+}
+.destacado-section-2 {
+    @include large {
+    margin-left: 40px;
+    
+    }
+
 }
 
 .latino__h2 {
@@ -185,6 +262,10 @@ main {
         grid-template-rows: repeat(2, auto);
         gap: 10px;
     }
+    @include large {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .latino__noticia-1 {
@@ -197,7 +278,18 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles ($height:230px, $width:70%);
+        transition: all 400ms ease;
+
     }
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
+
+
 }
 
 .latino__titulo-1 {
@@ -207,6 +299,10 @@ main {
 
 .titulo-1__description {
     @include description;
+    @include large {
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+    }
 
 }
 
@@ -221,7 +317,16 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles ($height:230px, $width:70%);
+        transition: all 400ms ease;
     }
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
+
 }
 
 .latino__titulo-2 {
@@ -230,6 +335,10 @@ main {
 
 .titulo-2__description {
     @include description;
+    @include large {
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+    }
 }
 
 
@@ -244,7 +353,15 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles ($height:230px, $width:70%);
+        transition: all 400ms ease;
     }
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }  
 }
 
 .latino__titulo-3 {
@@ -254,6 +371,10 @@ main {
 
 .titulo-3__description {
     @include description;
+    @include large {
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+    }
 }
 
 
@@ -267,7 +388,15 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
+        @include articles ($height:230px, $width:70%);
+        transition: all 400ms ease;
     }
+    &:hover{
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    } 
 }
 
 
@@ -278,11 +407,22 @@ main {
 
 .titulo-4__description {
     @include description;
+    @include large {
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+    }
 }
 
 
 .latino__image {
     @include images;
+    
+    @include large {
+        width: 250px;
+        height: 200px;
+        float: left;
+        margin-right: 20px;
+    }
 
 
 }
