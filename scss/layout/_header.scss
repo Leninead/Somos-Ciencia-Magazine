@@ -1,12 +1,13 @@
 header {
     display: flex;
     flex-direction: column;
-    background-image: url(../assets/img/tierra-universo.webp);
+    background-image: url(../assets/img/universo-gif.gif);
     color: white;
     padding: 15px;
     justify-content: space-around;
     align-items: center;
     height: 15vh;
+
     @include medium {
         flex-direction: row;
     }
@@ -15,17 +16,20 @@ header {
         color: white;
         text-align: center;
         font-size: 40px;
-        @include large{
+
+        @include large {
             font-size: 50px;
         }
+
         &:hover {
-            color: red;
+            color:rgba(73, 222, 255, 0.5);
         }
-      
+
     }
 
     nav {
         width: 100%;
+
         @include medium {
             width: 50%;
         }
@@ -43,23 +47,28 @@ header {
         font-weight: 900;
         font-size: 10px;
         font-family: 'Michroma', sans-serif;
+
         @include medium {
             font-size: 11px;
         }
+
         @include large {
             color: white;
-                font-weight: 900;
-                font-size: 15px;
-                font-family: 'Michroma', sans-serif;
-                justify-content: flex-end;
-                &:hover {
-                    color: red;
-                    
-                }
+            font-weight: 900;
+            font-size: 15px;
+            font-family: 'Michroma', sans-serif;
+            justify-content: flex-end;
+            transition: all 400ms ease;
+
+            &:hover {
+                color: rgba(73, 222, 255, 0.5);
+                box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+                transform: translatey(2%);
+
+            }
         }
-        
+
 
     }
 
 }
-

@@ -278,7 +278,7 @@ main {
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles ($height:230px, $width:70%);
+        @include articles ($height:250px, $width:70%);
         transition: all 400ms ease;
 
     }

@@ -1,3 +1,9 @@
+.ciencia-logo__image {
+    @include images;
+    @include large {
+        height: 300px;
+    }
+}
 .container-ciencia {
     display: flex;
     flex-direction: column;
@@ -7,6 +13,12 @@
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(4, auto);
         gap: 10px;
+
+    }
+    @include large {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
     }
 }
 
@@ -36,103 +48,180 @@
         grid-column: span 2;
         height: 260px;
     }
-
+  
 }
 
 
-.section-2 {
-    @include large {
-        @include boxshadow;
-
-    }
-
-}
-
-.section-3 {
-    @include large {
-        @include boxshadow;
-
-    }
-
-}
-
-.section-4 {
-    @include large {
-        @include boxshadow;
-
-    }
-
-}
-
-.section-5 {
-    @include large {
-        @include boxshadow;
-
-    }
-
-}
 
 .ciencia__image {
     @include images;
+    @include large {
+        width: 250px;
+        height: 200px;
+        float: left;
+        margin-right: 20px;
+    }
+
 
 }
 
 .ciencia-1 {
     @include articles;
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+        
+        @include articles ($height: 250px, $width: 70%);
+        transition: all 400ms ease;
+
+    }
+
+    &:hover {
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
+
 
     &__h2 {
         @include h2articles;
     }
 
     &__description {
-        text-align: justify;
+        text-align: center;
+        @include large {
+            @include description;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
     }
 }
 
 .ciencia-2 {
     @include articles;
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+        @include articles ($height: 230px, $width: 70%);
+        transition: all 400ms ease;
+
+    }
+
+    &:hover {
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
+
 
     &__h2 {
         @include h2articles;
+        
     }
 
     &__description {
-        text-align: justify;
+        text-align: center;
+        @include large {
+            @include description;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
     }
 }
 
 .ciencia-3 {
     @include articles;
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+        @include articles ($height: 230px, $width: 70%);
+        transition: all 400ms ease;
+
+    }
+
+    &:hover {
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
 
     &__h2 {
         @include h2articles;
     }
 
     &__description {
-        text-align: justify;
+        text-align: center;
+        @include large {
+            @include description;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
     }
 }
 
 .ciencia-4 {
     @include articles;
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+        @include articles ($height: 230px, $width: 70%);
+        transition: all 400ms ease;
+
+    }
+
+    &:hover {
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
 
     &__h2 {
         @include h2articles;
     }
 
     &__description {
-        text-align: justify;
+        text-align: center;
+        @include large {
+            @include description;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
+
     }
 }
 
 .ciencia-5 {
     @include articles;
+    @include large {
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+        margin: 10px;
+        
+        @include articles ($height: 230px, $width: 70%);
+        transition: all 400ms ease;
+
+    }
+
+    &:hover {
+        @include large {
+            box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
+            transform: translatex(2%);
+        }
+    }
 
     &__h2 {
         @include h2articles;
     }
 
     &__description {
-        text-align: justify;
+        text-align: center;
+        @include large {
+            @include description;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+        }
     }
 }

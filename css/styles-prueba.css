@@ -15,7 +15,7 @@ a {
 header {
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/img/tierra-universo.webp);
+  background-image: url(../assets/img/universo-gif.gif);
   color: white;
   padding: 15px;
   justify-content: space-around;
@@ -38,7 +38,7 @@ header h1 {
   }
 }
 header h1:hover {
-  color: red;
+  color: rgba(73, 222, 255, 0.5);
 }
 header nav {
   width: 100%;
@@ -71,9 +71,12 @@ header li a {
     font-size: 15px;
     font-family: "Michroma", sans-serif;
     justify-content: flex-end;
+    transition: all 400ms ease;
   }
   header li a:hover {
-    color: red;
+    color: rgba(73, 222, 255, 0.5);
+    box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+    transform: translatey(2%);
   }
 }
 
@@ -191,7 +194,7 @@ footer {
   display: flex;
   padding: 5px;
   height: 100%;
-  background-image: url(../assets/img/universo.webp);
+  background-image: url(../assets/img/universo-gif.gif);
 }
 
 .container {
@@ -598,7 +601,7 @@ footer {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin: 10px;
     width: 70%;
-    height: 230px;
+    height: 250px;
     margin-bottom: 20px;
     padding: 10px;
     cursor: default;
@@ -810,6 +813,16 @@ footer {
   }
 }
 
+.tecnologia-logo__image {
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 1200px) {
+  .tecnologia-logo__image {
+    height: 300px;
+  }
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -820,6 +833,13 @@ footer {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repea(4, auto);
     gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
   }
 }
 
@@ -847,49 +867,33 @@ footer {
     height: 260px;
   }
 }
-@media (min-width: 1200px) {
-  .section-1 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-2 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-3 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-4 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-5 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
 
 .titulo-tecnologia {
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 
+.tecnologia-1__image {
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 1200px) {
+  .tecnologia-1__image {
+    height: 180px;
+  }
+}
+
 .tecnologia__image {
   width: 100%;
   height: 150px;
+}
+@media (min-width: 1200px) {
+  .tecnologia__image {
+    width: 250px;
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+  }
 }
 
 .article-1 {
@@ -898,6 +902,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .article-1 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .article-1:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .article-1__h2 {
   text-align: center;
@@ -914,6 +936,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .article-2 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .article-2:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .article-2__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -924,6 +964,14 @@ footer {
 .article-2__description {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .article-2__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .article-3 {
   width: 100%;
@@ -931,6 +979,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .article-3 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .article-3:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .article-3__h2 {
   text-align: center;
@@ -942,6 +1008,14 @@ footer {
 .article-3__description {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .article-3__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .article-4 {
   width: 100%;
@@ -949,6 +1023,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .article-4 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .article-4:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .article-4__h2 {
   text-align: center;
@@ -960,6 +1052,14 @@ footer {
 .article-4__description {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .article-4__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .article-5 {
   width: 100%;
@@ -967,6 +1067,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .article-5 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .article-5:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .article-5__h2 {
   text-align: center;
@@ -977,6 +1095,24 @@ footer {
 }
 .article-5__description {
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .article-5__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
+
+.ciencia-logo__image {
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 1200px) {
+  .ciencia-logo__image {
+    height: 300px;
+  }
 }
 
 .container-ciencia {
@@ -989,6 +1125,13 @@ footer {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
     gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-ciencia {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
   }
 }
 
@@ -1027,37 +1170,17 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
-  .section-2 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-3 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-4 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-5 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
 .ciencia__image {
   width: 100%;
   height: 150px;
+}
+@media (min-width: 1200px) {
+  .ciencia__image {
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+  }
 }
 
 .ciencia-1 {
@@ -1067,6 +1190,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .ciencia-1 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .ciencia-1:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .ciencia-1__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1075,7 +1216,15 @@ footer {
   margin-bottom: 5px;
 }
 .ciencia-1__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .ciencia-1__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .ciencia-2 {
@@ -1085,6 +1234,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .ciencia-2 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .ciencia-2:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .ciencia-2__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1093,7 +1260,15 @@ footer {
   margin-bottom: 5px;
 }
 .ciencia-2__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .ciencia-2__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .ciencia-3 {
@@ -1103,6 +1278,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .ciencia-3 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .ciencia-3:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .ciencia-3__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1111,7 +1304,15 @@ footer {
   margin-bottom: 5px;
 }
 .ciencia-3__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .ciencia-3__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .ciencia-4 {
@@ -1121,6 +1322,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .ciencia-4 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .ciencia-4:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .ciencia-4__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1129,7 +1348,15 @@ footer {
   margin-bottom: 5px;
 }
 .ciencia-4__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .ciencia-4__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .ciencia-5 {
@@ -1139,6 +1366,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .ciencia-5 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .ciencia-5:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .ciencia-5__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1147,7 +1392,25 @@ footer {
   margin-bottom: 5px;
 }
 .ciencia-5__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .ciencia-5__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
+
+.universo-logo__image {
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 1200px) {
+  .universo-logo__image {
+    height: 300px;
+  }
 }
 
 .container-universo {
@@ -1160,6 +1423,13 @@ footer {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repea(4, auto);
     gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-universo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
   }
 }
 
@@ -1198,6 +1468,14 @@ footer {
   width: 100%;
   height: 150px;
 }
+@media (min-width: 1200px) {
+  .universo__image {
+    width: 250px;
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+  }
+}
 
 .section-1 {
   width: 100%;
@@ -1231,6 +1509,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .universo-1 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .universo-1:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .universo-1__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1239,7 +1535,15 @@ footer {
   margin-bottom: 5px;
 }
 .universo-1__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .universo-1__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .universo-2 {
@@ -1249,6 +1553,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .universo-2 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .universo-2:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .universo-2__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1257,7 +1579,15 @@ footer {
   margin-bottom: 5px;
 }
 .universo-2__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .universo-2__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .universo-3 {
@@ -1267,6 +1597,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .universo-3 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .universo-3:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .universo-3__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1275,7 +1623,15 @@ footer {
   margin-bottom: 5px;
 }
 .universo-3__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .universo-3__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .universo-4 {
@@ -1285,6 +1641,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .universo-4 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .universo-4:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .universo-4__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1293,7 +1667,15 @@ footer {
   margin-bottom: 5px;
 }
 .universo-4__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .universo-4__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .universo-5 {
@@ -1303,6 +1685,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .universo-5 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .universo-5:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .universo-5__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1311,7 +1711,25 @@ footer {
   margin-bottom: 5px;
 }
 .universo-5__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .universo-5__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
+
+.business-logo__image {
+  width: 100%;
+  height: 150px;
+}
+@media (min-width: 1200px) {
+  .business-logo__image {
+    height: 300px;
+  }
 }
 
 .container-business {
@@ -1324,6 +1742,13 @@ footer {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repea(4, auto);
     gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-business {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
   }
 }
 
@@ -1353,44 +1778,18 @@ footer {
     height: 260px;
   }
 }
-@media (min-width: 1200px) {
-  .section-1 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-2 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-3 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-4 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section-5 {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
-  }
-}
 
 .business__image {
   width: 100%;
   height: 150px;
+}
+@media (min-width: 1200px) {
+  .business__image {
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+  }
 }
 
 .business__h2 {
@@ -1408,6 +1807,24 @@ footer {
   padding: 10px;
   cursor: default;
 }
+@media (min-width: 1200px) {
+  .business-1 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .business-1:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
+}
 .business-1__h2 {
   text-align: center;
   font-size: 1.3em;
@@ -1416,7 +1833,15 @@ footer {
   margin-bottom: 5px;
 }
 .business-1__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .business-1__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 .business-2 {
@@ -1425,6 +1850,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .business-2 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .business-2:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .business-2__h2 {
   text-align: center;
@@ -1436,6 +1879,14 @@ footer {
 .business-2__description {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .business-2__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .business-3 {
   width: 100%;
@@ -1443,6 +1894,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .business-3 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .business-3:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .business-3__h2 {
   text-align: center;
@@ -1454,6 +1923,14 @@ footer {
 .business-3__description {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .business-3__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .business-4 {
   width: 100%;
@@ -1461,6 +1938,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .business-4 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .business-4:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .business-4__h2 {
   text-align: center;
@@ -1472,6 +1967,14 @@ footer {
 .business-4__description {
   text-align: center;
 }
+@media (min-width: 1200px) {
+  .business-4__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .business-5 {
   width: 100%;
@@ -1479,6 +1982,24 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   cursor: default;
+}
+@media (min-width: 1200px) {
+  .business-5 {
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    margin: 10px;
+    width: 70%;
+    height: 250px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .business-5:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
+  }
 }
 .business-5__h2 {
   text-align: center;
@@ -1488,7 +2009,15 @@ footer {
   margin-bottom: 5px;
 }
 .business-5__description {
-  text-align: justify;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .business-5__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=styles-prueba.css.map */

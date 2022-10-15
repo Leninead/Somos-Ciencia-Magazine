@@ -22,7 +22,7 @@ header {
   align-items: center;
   height: 15vh;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   header {
     flex-direction: row;
   }
@@ -43,7 +43,7 @@ header h1:hover {
 header nav {
   width: 100%;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   header nav {
     width: 50%;
   }
@@ -59,7 +59,7 @@ header li a {
   font-size: 10px;
   font-family: "Michroma", sans-serif;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   header li a {
     font-size: 11px;
   }
@@ -181,7 +181,7 @@ aside h3 {
 }
 
 @media (min-width: 1200px) {
-  .latino__image {
+  .aside__image {
     width: 100%;
     height: 9.5rem;
   }
@@ -201,6 +201,23 @@ footer {
   align-items: baseline;
   gap: 1em;
 }
+@media (min-width: 320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 610px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    gap: 1em;
+  }
+}
 .container__footer {
   color: white;
   font-size: 1.8rem;
@@ -213,6 +230,14 @@ footer {
   align-items: flex-start;
   color: white;
   font-size: 1.2rem;
+  padding: 5px;
+}
+@media (min-width: 1200px) {
+  .container-nav__ul li a {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
 }
 .container-nav__ul li a:hover {
   color: red;
@@ -226,8 +251,45 @@ footer {
   color: white;
   font-size: 1.3em;
 }
+@media (min-width: 320px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 610px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
 .newsletter__h4 {
   margin-bottom: 5px;
+}
+
+@media (min-width: 320px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -270,7 +332,7 @@ footer {
   }
 }
 
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .destacado {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -286,7 +348,7 @@ footer {
   }
 }
 
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .destacado__article {
     grid-column: span 2;
   }
@@ -297,8 +359,9 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .noticia-1 {
     height: 15rem;
   }
@@ -308,16 +371,24 @@ footer {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin: 10px;
     width: 93%;
-    height: 500px;
+    height: 530px;
     margin-bottom: 20px;
     padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .noticia-1:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatey(2%);
   }
 }
 .noticia-1__image {
   width: 100%;
   height: 150px;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .noticia-1__image {
     width: 100%;
     height: 150px;
@@ -336,8 +407,8 @@ footer {
   margin-bottom: 5px;
 }
 .noticia-1__description {
-  text-align: justify;
-  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
 }
 
 .noticia-2 {
@@ -345,8 +416,9 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .noticia-2 {
     margin-bottom: 45px;
   }
@@ -359,6 +431,14 @@ footer {
     height: 480px;
     margin-bottom: 20px;
     padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .noticia-2:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatey(-2%);
   }
 }
 .noticia-2__image {
@@ -385,7 +465,9 @@ footer {
 }
 @media (min-width: 1200px) {
   .noticia-2__description {
-    line-height: 1.5;
+    line-height: 1.3;
+    font-family: "Roboto Mono", monospace;
+    color: black;
   }
 }
 
@@ -394,6 +476,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 @media (min-width: 1200px) {
   .noticia-3 {
@@ -403,6 +486,14 @@ footer {
     height: 480px;
     margin-bottom: 20px;
     padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .noticia-3:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatey(-2%);
   }
 }
 .noticia-3__image {
@@ -429,7 +520,9 @@ footer {
 }
 @media (min-width: 1200px) {
   .noticia-3__description {
-    line-height: 1.5;
+    line-height: 1.3;
+    font-family: "Roboto Mono", monospace;
+    color: black;
   }
 }
 
@@ -441,6 +534,9 @@ footer {
 @media (min-width: 1200px) {
   .latino-titulo {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.322);
+    height: 7vh;
+    width: 95%;
   }
 }
 .latino-titulo__h2 {
@@ -454,8 +550,6 @@ footer {
 @media (min-width: 1200px) {
   .destacado-section-2 {
     margin-left: 40px;
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -472,12 +566,18 @@ footer {
   }
 }
 
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .latino-section-1 {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .latino-section-1 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -486,8 +586,9 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .latino__noticia-1 {
     margin-bottom: 2em;
   }
@@ -496,6 +597,18 @@ footer {
   .latino__noticia-1 {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .latino__noticia-1:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
   }
 }
 
@@ -511,14 +624,21 @@ footer {
   text-align: justify;
   margin-top: 10px;
 }
+@media (min-width: 1200px) {
+  .titulo-1__description {
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .latino__noticia-2 {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .latino__noticia-2 {
     margin-bottom: 2em;
   }
@@ -527,6 +647,18 @@ footer {
   .latino__noticia-2 {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .latino__noticia-2:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
   }
 }
 
@@ -542,14 +674,21 @@ footer {
   text-align: justify;
   margin-top: 10px;
 }
+@media (min-width: 1200px) {
+  .titulo-2__description {
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .latino__noticia-3 {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .latino__noticia-3 {
     margin-bottom: 2em;
   }
@@ -558,6 +697,18 @@ footer {
   .latino__noticia-3 {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .latino__noticia-3:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
   }
 }
 
@@ -573,14 +724,21 @@ footer {
   text-align: justify;
   margin-top: 10px;
 }
+@media (min-width: 1200px) {
+  .titulo-3__description {
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .latino__noticia-4 {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .latino__noticia-4 {
     margin-bottom: 2em;
   }
@@ -589,6 +747,18 @@ footer {
   .latino__noticia-4 {
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin: 10px;
+    width: 70%;
+    height: 230px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+}
+@media (min-width: 1200px) {
+  .latino__noticia-4:hover {
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    transform: translatex(2%);
   }
 }
 
@@ -604,10 +774,24 @@ footer {
   text-align: justify;
   margin-top: 10px;
 }
+@media (min-width: 1200px) {
+  .titulo-4__description {
+    font-family: "Roboto Mono", monospace;
+    color: black;
+  }
+}
 
 .latino__image {
   width: 100%;
   height: 150px;
+}
+@media (min-width: 1200px) {
+  .latino__image {
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 320px) {
@@ -630,7 +814,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -651,13 +835,13 @@ footer {
   text-align: center;
   font-weight: 800;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .titulo-tecnologia {
     grid-column: span 2;
   }
 }
 
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .section-1 {
     grid-column: span 2;
     height: 260px;
@@ -713,6 +897,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .article-1__h2 {
   text-align: center;
@@ -727,6 +912,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .article-2__h2 {
   text-align: center;
@@ -744,6 +930,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .article-3__h2 {
   text-align: center;
@@ -761,6 +948,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .article-4__h2 {
   text-align: center;
@@ -778,6 +966,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .article-5__h2 {
   text-align: center;
@@ -794,7 +983,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .container-ciencia {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -808,7 +997,7 @@ footer {
   height: 7vh;
   width: 100%;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .ciencia-titulo {
     grid-column: span 2;
   }
@@ -831,7 +1020,7 @@ footer {
   width: 100%;
   height: 290px;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .section-1 {
     grid-column: span 2;
     height: 260px;
@@ -876,6 +1065,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .ciencia-1__h2 {
   text-align: center;
@@ -893,6 +1083,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .ciencia-2__h2 {
   text-align: center;
@@ -910,6 +1101,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .ciencia-3__h2 {
   text-align: center;
@@ -927,6 +1119,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .ciencia-4__h2 {
   text-align: center;
@@ -944,6 +1137,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .ciencia-5__h2 {
   text-align: center;
@@ -960,7 +1154,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .container-universo {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -974,7 +1168,7 @@ footer {
   height: 7vh;
   width: 100%;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .universo-titulo {
     grid-column: span 2;
   }
@@ -993,7 +1187,7 @@ footer {
   font-weight: 800;
 }
 
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .section-1 {
     grid-column: span 2;
     height: 260px;
@@ -1035,6 +1229,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .universo-1__h2 {
   text-align: center;
@@ -1052,6 +1247,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .universo-2__h2 {
   text-align: center;
@@ -1069,6 +1265,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .universo-3__h2 {
   text-align: center;
@@ -1086,6 +1283,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .universo-4__h2 {
   text-align: center;
@@ -1103,6 +1301,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .universo-5__h2 {
   text-align: center;
@@ -1119,7 +1318,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .container-business {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -1135,7 +1334,7 @@ footer {
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .business-titulo {
     grid-column: span 2;
   }
@@ -1148,7 +1347,7 @@ footer {
   font-weight: 800;
 }
 
-@media (min-width: 685px) {
+@media (min-width: 610px) {
   .section-1 {
     grid-column: span 2;
     height: 260px;
@@ -1207,6 +1406,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .business-1__h2 {
   text-align: center;
@@ -1224,6 +1424,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .business-2__h2 {
   text-align: center;
@@ -1241,6 +1442,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .business-3__h2 {
   text-align: center;
@@ -1258,6 +1460,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .business-4__h2 {
   text-align: center;
@@ -1275,6 +1478,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  cursor: default;
 }
 .business-5__h2 {
   text-align: center;
