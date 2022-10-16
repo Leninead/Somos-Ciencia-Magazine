@@ -12,7 +12,7 @@ main {
 
             "section2 aside"
     }
-    
+
 
 }
 
@@ -21,11 +21,11 @@ main {
 
     @include large {
         grid-area: section0;
-        
+
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin-left: 40px;
         height: 50px;
-        @include maintitle ($width:91%);
+        @include maintitle ($width: 91%);
     }
 
     &__destacado {
@@ -35,6 +35,7 @@ main {
     }
 
 }
+
 .titulo__destacado {
     @include large {
         width: 100%;
@@ -56,16 +57,17 @@ main {
         grid-area: section1;
         margin-left: 40px;
     }
-   
-  
+
+
 }
 
 .destacado__article {
+
     @include medium {
         grid-column: span 2;
     }
-    
-   
+
+
 
 
 }
@@ -73,18 +75,25 @@ main {
 .noticia-1 {
     @include articles();
 
+    @include small {
+        @include articles($height: 370px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+
+    }
+
     @include medium {
-        height: 15rem;
+        height: 17rem;
     }
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles($width: 93%, $height:530px);
+        @include articles($width: 93%, $height: 530px);
         transition: all 400ms ease;
-          
+
     }
-    &:hover{
+
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatey(2%);
@@ -98,21 +107,32 @@ main {
             width: 100%;
             height: 150px;
         }
+
         @include large {
-            height: 400px
+            height: 400px;
+
         }
 
     }
 
     &__titulo {
         @include h2articles;
+
+        @include small {
+            margin-bottom: 10px;
+        }
     }
 
     &__description {
-       
-            font-family: 'Roboto Mono', monospace;
-            color: black;
-        
+
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+
+        @include small {
+            font-size: 14px;
+            text-align: center
+        }
+
     }
 }
 
@@ -120,26 +140,32 @@ main {
 .noticia-2 {
     @include articles();
 
+    @include small {
+        @include articles($height: 370px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+
     @include medium {
+        height: 380px;
         margin-bottom: 45px;
     }
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles($width:85%, $height:480px);
+        @include articles($width: 85%, $height: 480px);
         transition: all 400ms ease;
-        
+
     }
 
-    &:hover{
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatey(-2%);
         }
     }
 
-   
+
 
     &__image {
         @include images();
@@ -148,25 +174,28 @@ main {
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
             height: 240px;
             margin-bottom: 10px
-           
-            
-            
         }
 
 
     }
 
+
     &__titulo {
         @include h2articles;
+
+        @include small {
+            margin-bottom: 10px;
+        }
     }
 
     &__description {
-        @include description();
-        @include large {
-            line-height: 1.3;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
-        
+
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+
+        @include small {
+            font-size: 14px;
+            text-align: center
         }
     }
 
@@ -175,14 +204,25 @@ main {
 .noticia-3 {
     @include articles();
 
+    @include small {
+        @include articles($height: 350px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+
+    @include medium {
+        height: 380px;
+
+    }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles($width:85%, $height:480px);
+        @include articles($width: 85%, $height: 480px);
         transition: all 400ms ease;
-        
+
     }
-    &:hover{
+
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatey(-2%);
@@ -197,7 +237,6 @@ main {
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
             height: 240px;
             margin-bottom: 10px
-            
         }
 
 
@@ -206,15 +245,20 @@ main {
 
     &__titulo {
         @include h2articles;
+
+        @include small {
+            margin-bottom: 10px;
+        }
     }
 
     &__description {
-        @include description ();
-        @include large {
-            line-height: 1.3;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
-        
+
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+
+        @include small {
+            font-size: 14px;
+            text-align: center
         }
 
     }
@@ -229,7 +273,7 @@ main {
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
-        @include maintitle ($width:95%);
+        @include maintitle ($width: 95%);
 
     }
 
@@ -239,10 +283,11 @@ main {
         @include h2title;
     }
 }
+
 .destacado-section-2 {
     @include large {
-    margin-left: 40px;
-    
+        margin-left: 40px;
+
     }
 
 }
@@ -262,6 +307,7 @@ main {
         grid-template-rows: repeat(2, auto);
         gap: 10px;
     }
+
     @include large {
         display: flex;
         flex-direction: column;
@@ -271,18 +317,26 @@ main {
 .latino__noticia-1 {
     @include articles;
 
+    @include small {
+        @include articles($height: 370px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+
     @include medium {
+
+        height: 380px;
         margin-bottom: 2em;
     }
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles ($height:250px, $width:70%);
+        @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
 
     }
-    &:hover{
+
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatex(2%);
@@ -299,6 +353,13 @@ main {
 
 .titulo-1__description {
     @include description;
+
+    @include small {
+        font-size: 14px;
+        text-align: center
+    }
+
+
     @include large {
         font-family: 'Roboto Mono', monospace;
         color: black;
@@ -310,17 +371,24 @@ main {
 .latino__noticia-2 {
     @include articles;
 
+    @include small {
+        @include articles($height: 350px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+
     @include medium {
+        height: 380px;
         margin-bottom: 2em;
     }
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles ($height:230px, $width:70%);
+        @include articles ($height: 230px, $width: 70%);
         transition: all 400ms ease;
     }
-    &:hover{
+
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatex(2%);
@@ -335,6 +403,11 @@ main {
 
 .titulo-2__description {
     @include description;
+    @include small {
+        font-size: 14px;
+        text-align: center
+    }
+
     @include large {
         font-family: 'Roboto Mono', monospace;
         color: black;
@@ -346,22 +419,29 @@ main {
 .latino__noticia-3 {
     @include articles;
 
+    @include small {
+        @include articles($height: 350px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+
     @include medium {
+        height: 380px;
         margin-bottom: 2em;
     }
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles ($height:230px, $width:70%);
+        @include articles ($height: 230px, $width: 70%);
         transition: all 400ms ease;
     }
-    &:hover{
+
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatex(2%);
         }
-    }  
+    }
 }
 
 .latino__titulo-3 {
@@ -371,6 +451,11 @@ main {
 
 .titulo-3__description {
     @include description;
+    @include small {
+        font-size: 14px;
+        text-align: center
+    }
+
     @include large {
         font-family: 'Roboto Mono', monospace;
         color: black;
@@ -381,22 +466,29 @@ main {
 .latino__noticia-4 {
     @include articles;
 
+    @include small {
+        @include articles($height: 350px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+    }
+
     @include medium {
+        height: 380px;
         margin-bottom: 2em;
     }
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        @include articles ($height:230px, $width:70%);
+        @include articles ($height: 230px, $width: 70%);
         transition: all 400ms ease;
     }
-    &:hover{
+
+    &:hover {
         @include large {
             box-shadow: 5px 15px 15px rgba(0, 0, 0, 60);
             transform: translatex(2%);
         }
-    } 
+    }
 }
 
 
@@ -407,6 +499,11 @@ main {
 
 .titulo-4__description {
     @include description;
+    @include small {
+        font-size: 14px;
+        text-align: center
+    }
+
     @include large {
         font-family: 'Roboto Mono', monospace;
         color: black;
@@ -416,7 +513,7 @@ main {
 
 .latino__image {
     @include images;
-    
+
     @include large {
         width: 250px;
         height: 200px;

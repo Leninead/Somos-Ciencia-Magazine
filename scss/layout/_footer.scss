@@ -57,12 +57,15 @@ footer {
         display: flex;
         flex-direction: row;
         padding: 5px;
+        transition: all 400ms ease;
        
        
      }
  
     &:hover {
-        color: red;
+        color: rgba(73, 222, 255, 0.5);
+        box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+        transform: translatey(2%);
     }
    
   
@@ -80,6 +83,7 @@ footer {
     @include small { 
         display: flex;
         flex-direction: column;
+        
         
         align-items: center;
     }
@@ -102,7 +106,9 @@ footer {
     &__h4 {
         margin-bottom: 5px;
     }
+   
 }
+
 
 form {
     @include small { 
@@ -110,7 +116,7 @@ form {
         flex-direction: column;
         
         align-items: center;
-        gap: 5px
+        gap: 10px
     }
     @include large {
         display: flex;

@@ -31,6 +31,7 @@ header h1 {
   color: white;
   text-align: center;
   font-size: 40px;
+  transition: all 400ms ease;
 }
 @media (min-width: 1200px) {
   header h1 {
@@ -39,6 +40,8 @@ header h1 {
 }
 header h1:hover {
   color: rgba(73, 222, 255, 0.5);
+  box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+  transform: translatey(2%);
 }
 header nav {
   width: 100%;
@@ -240,10 +243,13 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 5px;
+    transition: all 400ms ease;
   }
 }
 .container-nav__ul li a:hover {
-  color: red;
+  color: rgba(73, 222, 255, 0.5);
+  box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+  transform: translatey(2%);
 }
 
 .newsletter {
@@ -284,7 +290,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -362,11 +368,23 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .noticia-1 {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 610px) {
   .noticia-1 {
-    height: 15rem;
+    height: 17rem;
   }
 }
 @media (min-width: 1200px) {
@@ -377,6 +395,7 @@ footer {
     height: 530px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -408,10 +427,22 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
+}
+@media (min-width: 320px) {
+  .noticia-1__titulo {
+    margin-bottom: 10px;
+  }
 }
 .noticia-1__description {
   font-family: "Roboto Mono", monospace;
   color: black;
+}
+@media (min-width: 320px) {
+  .noticia-1__description {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 .noticia-2 {
@@ -419,10 +450,23 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .noticia-2 {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 610px) {
   .noticia-2 {
+    height: 380px;
     margin-bottom: 45px;
   }
 }
@@ -434,6 +478,7 @@ footer {
     height: 480px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -461,16 +506,21 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
+}
+@media (min-width: 320px) {
+  .noticia-2__titulo {
+    margin-bottom: 10px;
+  }
 }
 .noticia-2__description {
-  text-align: justify;
-  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
 }
-@media (min-width: 1200px) {
+@media (min-width: 320px) {
   .noticia-2__description {
-    line-height: 1.3;
-    font-family: "Roboto Mono", monospace;
-    color: black;
+    font-size: 14px;
+    text-align: center;
   }
 }
 
@@ -479,7 +529,24 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .noticia-3 {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
+}
+@media (min-width: 610px) {
+  .noticia-3 {
+    height: 380px;
+  }
 }
 @media (min-width: 1200px) {
   .noticia-3 {
@@ -489,6 +556,7 @@ footer {
     height: 480px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -516,16 +584,21 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
+}
+@media (min-width: 320px) {
+  .noticia-3__titulo {
+    margin-bottom: 10px;
+  }
 }
 .noticia-3__description {
-  text-align: justify;
-  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
 }
-@media (min-width: 1200px) {
+@media (min-width: 320px) {
   .noticia-3__description {
-    line-height: 1.3;
-    font-family: "Roboto Mono", monospace;
-    color: black;
+    font-size: 14px;
+    text-align: center;
   }
 }
 
@@ -589,10 +662,23 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .latino__noticia-1 {
+    width: 100%;
+    height: 370px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 610px) {
   .latino__noticia-1 {
+    height: 380px;
     margin-bottom: 2em;
   }
 }
@@ -604,6 +690,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -621,11 +708,21 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 
 .titulo-1__description {
   text-align: justify;
   margin-top: 10px;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  color: black;
+}
+@media (min-width: 320px) {
+  .titulo-1__description {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 @media (min-width: 1200px) {
   .titulo-1__description {
@@ -639,10 +736,23 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .latino__noticia-2 {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 610px) {
   .latino__noticia-2 {
+    height: 380px;
     margin-bottom: 2em;
   }
 }
@@ -654,6 +764,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -671,11 +782,21 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 
 .titulo-2__description {
   text-align: justify;
   margin-top: 10px;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  color: black;
+}
+@media (min-width: 320px) {
+  .titulo-2__description {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 @media (min-width: 1200px) {
   .titulo-2__description {
@@ -689,10 +810,23 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .latino__noticia-3 {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 610px) {
   .latino__noticia-3 {
+    height: 380px;
     margin-bottom: 2em;
   }
 }
@@ -704,6 +838,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -721,11 +856,21 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 
 .titulo-3__description {
   text-align: justify;
   margin-top: 10px;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  color: black;
+}
+@media (min-width: 320px) {
+  .titulo-3__description {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 @media (min-width: 1200px) {
   .titulo-3__description {
@@ -739,10 +884,23 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .latino__noticia-4 {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 610px) {
   .latino__noticia-4 {
+    height: 380px;
     margin-bottom: 2em;
   }
 }
@@ -754,6 +912,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -771,11 +930,21 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 
 .titulo-4__description {
   text-align: justify;
   margin-top: 10px;
+  font-family: "Crimson Text", serif;
+  font-weight: 500;
+  color: black;
+}
+@media (min-width: 320px) {
+  .titulo-4__description {
+    font-size: 14px;
+    text-align: center;
+  }
 }
 @media (min-width: 1200px) {
   .titulo-4__description {
@@ -861,13 +1030,6 @@ footer {
   }
 }
 
-@media (min-width: 610px) {
-  .section-1 {
-    grid-column: span 2;
-    height: 260px;
-  }
-}
-
 .titulo-tecnologia {
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
@@ -876,6 +1038,11 @@ footer {
 .tecnologia-1__image {
   width: 100%;
   height: 150px;
+}
+@media (min-width: 610px) {
+  .tecnologia-1__image {
+    height: 200px;
+  }
 }
 @media (min-width: 1200px) {
   .tecnologia-1__image {
@@ -896,12 +1063,44 @@ footer {
   }
 }
 
+.section-1 {
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 320px) {
+  .section-1 {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 610px) {
+  .section-1 {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-1 {
+    margin-bottom: 15px;
+  }
+}
+
 .article-1 {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .article-1 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
 }
 @media (min-width: 1200px) {
   .article-1 {
@@ -911,6 +1110,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -927,6 +1127,26 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
+}
+
+.section-2 {
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 320px) {
+  .section-2 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-2 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+  }
 }
 
 .article-2 {
@@ -934,7 +1154,24 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .article-2 {
+    width: 100%;
+    height: 340px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  }
+}
+@media (min-width: 610px) {
+  .article-2 {
+    height: 390px;
+  }
 }
 @media (min-width: 1200px) {
   .article-2 {
@@ -944,6 +1181,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -960,16 +1198,58 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .article-2__description {
   text-align: center;
+}
+@media (min-width: 320px) {
+  .article-2__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
+}
+@media (min-width: 610px) {
+  .article-2__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
 }
 @media (min-width: 1200px) {
   .article-2__description {
     text-align: justify;
     margin-top: 10px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
     color: black;
+  }
+}
+
+.section-3 {
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 320px) {
+  .section-3 {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 610px) {
+  .section-3 {
+    margin-bottom: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-3 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
   }
 }
 
@@ -978,7 +1258,25 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .article-3 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    height: 370px;
+  }
+}
+@media (min-width: 610px) {
+  .article-3 {
+    height: 390px;
+  }
 }
 @media (min-width: 1200px) {
   .article-3 {
@@ -988,6 +1286,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1004,16 +1303,58 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .article-3__description {
   text-align: center;
+}
+@media (min-width: 320px) {
+  .article-3__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
+}
+@media (min-width: 610px) {
+  .article-3__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
 }
 @media (min-width: 1200px) {
   .article-3__description {
     text-align: justify;
     margin-top: 10px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
     color: black;
+  }
+}
+
+.section-4 {
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 320px) {
+  .section-4 {
+    margin-bottom: 130px;
+  }
+}
+@media (min-width: 610px) {
+  .section-4 {
+    margin-bottom: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-4 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1022,7 +1363,25 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .article-4 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    height: 380px;
+  }
+}
+@media (min-width: 610px) {
+  .article-4 {
+    height: 380px;
+  }
 }
 @media (min-width: 1200px) {
   .article-4 {
@@ -1032,6 +1391,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1048,16 +1408,53 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .article-4__description {
   text-align: center;
+}
+@media (min-width: 320px) {
+  .article-4__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
+}
+@media (min-width: 610px) {
+  .article-4__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
 }
 @media (min-width: 1200px) {
   .article-4__description {
     text-align: justify;
     margin-top: 10px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
     color: black;
+  }
+}
+
+.section-5 {
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 320px) {
+  .section-5 {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-5 {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1066,7 +1463,25 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
+}
+@media (min-width: 320px) {
+  .article-5 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: black;
+    cursor: default;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    height: 340px;
+  }
+}
+@media (min-width: 610px) {
+  .article-5 {
+    height: 380px;
+  }
 }
 @media (min-width: 1200px) {
   .article-5 {
@@ -1076,6 +1491,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1092,15 +1508,35 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .article-5__description {
   text-align: center;
+}
+@media (min-width: 320px) {
+  .article-5__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
+}
+@media (min-width: 610px) {
+  .article-5__description {
+    text-align: justify;
+    margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
+  }
 }
 @media (min-width: 1200px) {
   .article-5__description {
     text-align: justify;
     margin-top: 10px;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
     color: black;
   }
 }
@@ -1188,6 +1624,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1198,6 +1635,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1214,6 +1652,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .ciencia-1__description {
   text-align: center;
@@ -1222,6 +1661,9 @@ footer {
   .ciencia-1__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1232,6 +1674,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1242,6 +1685,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1258,6 +1702,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .ciencia-2__description {
   text-align: center;
@@ -1266,6 +1711,9 @@ footer {
   .ciencia-2__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1276,6 +1724,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1286,6 +1735,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1302,6 +1752,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .ciencia-3__description {
   text-align: center;
@@ -1310,6 +1761,9 @@ footer {
   .ciencia-3__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1320,6 +1774,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1330,6 +1785,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1346,6 +1802,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .ciencia-4__description {
   text-align: center;
@@ -1354,6 +1811,9 @@ footer {
   .ciencia-4__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1364,6 +1824,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1374,6 +1835,7 @@ footer {
     height: 230px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1390,6 +1852,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .ciencia-5__description {
   text-align: center;
@@ -1398,6 +1861,9 @@ footer {
   .ciencia-5__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1477,36 +1943,12 @@ footer {
   }
 }
 
-.section-1 {
-  width: 100%;
-  height: 290px;
-}
-
-.section-2 {
-  width: 100%;
-  height: 290px;
-}
-
-.section-3 {
-  width: 100%;
-  height: 290px;
-}
-
-.section-4 {
-  width: 100%;
-  height: 290px;
-}
-
-.section-5 {
-  width: 100%;
-  height: 290px;
-}
-
 .universo-1 {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1517,6 +1959,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1533,6 +1976,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .universo-1__description {
   text-align: center;
@@ -1541,6 +1985,9 @@ footer {
   .universo-1__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1551,6 +1998,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1561,6 +2009,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1577,6 +2026,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .universo-2__description {
   text-align: center;
@@ -1585,6 +2035,9 @@ footer {
   .universo-2__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1595,6 +2048,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1605,6 +2059,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1621,6 +2076,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .universo-3__description {
   text-align: center;
@@ -1629,6 +2085,9 @@ footer {
   .universo-3__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1639,6 +2098,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1649,6 +2109,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1665,6 +2126,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .universo-4__description {
   text-align: center;
@@ -1673,6 +2135,9 @@ footer {
   .universo-4__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1683,6 +2148,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1693,6 +2159,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1709,6 +2176,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .universo-5__description {
   text-align: center;
@@ -1717,6 +2185,9 @@ footer {
   .universo-5__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1805,6 +2276,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1815,6 +2287,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1831,6 +2304,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .business-1__description {
   text-align: center;
@@ -1839,6 +2313,9 @@ footer {
   .business-1__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1849,6 +2326,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1859,6 +2337,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1875,6 +2354,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .business-2__description {
   text-align: center;
@@ -1883,6 +2363,9 @@ footer {
   .business-2__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1893,6 +2376,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1903,6 +2387,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1919,6 +2404,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .business-3__description {
   text-align: center;
@@ -1927,6 +2413,9 @@ footer {
   .business-3__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1937,6 +2426,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1947,6 +2437,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -1963,6 +2454,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .business-4__description {
   text-align: center;
@@ -1971,6 +2463,9 @@ footer {
   .business-4__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }
@@ -1981,6 +2476,7 @@ footer {
   height: 300px;
   margin-bottom: 20px;
   padding: 10px;
+  color: black;
   cursor: default;
 }
 @media (min-width: 1200px) {
@@ -1991,6 +2487,7 @@ footer {
     height: 250px;
     margin-bottom: 20px;
     padding: 10px;
+    color: black;
     cursor: default;
     transition: all 400ms ease;
   }
@@ -2007,6 +2504,7 @@ footer {
   color: rgb(75, 3, 75);
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: "Crimson Text", serif;
 }
 .business-5__description {
   text-align: center;
@@ -2015,6 +2513,9 @@ footer {
   .business-5__description {
     text-align: justify;
     margin-top: 10px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+    color: black;
     font-family: "Roboto Mono", monospace;
     color: black;
   }

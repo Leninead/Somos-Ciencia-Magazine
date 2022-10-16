@@ -36,15 +36,7 @@
     }
 }
 
-.section-1 {
-    @include medium {
-        grid-column: span 2;
-        height: 260px;
-    }
 
-
-
-}
 
 
 .titulo-tecnologia {
@@ -52,6 +44,9 @@
 }
 .tecnologia-1__image {
     @include images;
+    @include medium{
+        height: 200px;
+    }
     @include large {
         height: 180px;
     }
@@ -69,10 +64,36 @@
 
 
 
+.section-1 {
+    @include section;
+    @include small {
+        margin-bottom: 20px;
+        
+    }
+    @include medium {
+        margin-bottom: 40px;
+        
+    }
+    
 
+    @include large {
+      
+        margin-bottom: 15px
+    }
+}
 
 .article-1 {
     @include articles;
+    @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+       
+
+    }
+
+       
+   
+  
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
@@ -96,8 +117,29 @@
 
 }
 
+
+.section-2 {
+    @include section;
+    @include small {
+        @include section;
+        margin-bottom: 100px   
+    }
+    @include large {
+        @include section;
+        margin-bottom: 15px
+    }
+}
 .article-2 {
     @include articles;
+    @include small {
+        @include articles ($height:340px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+
+    }
+    @include medium {
+        height: 390px;
+    }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -119,18 +161,51 @@
 
     &__description {
         text-align: center;
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
 
     }
 
 }
+.section-3 {
+    @include section;
+    @include small {
+        margin-bottom: 120px;
+       
+    }
 
+    @include medium {
+        margin-bottom: 140px;
+       
+    }
+  
+    @include large {
+        @include section;
+        margin-bottom: 15px
+    }
+}
 .article-3 {
     @include articles;
+    @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 370px;
+
+        
+    }
+    @include medium {
+        height: 390px;
+    }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -153,17 +228,45 @@
     &__description {
         text-align: center;
         
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
 
     }
 }
-
+.section-4 {
+    @include section;
+    @include small {
+        margin-bottom: 130px
+    }
+    @include medium {
+        margin-bottom: 140px
+    }
+    @include large {
+        @include section;
+        margin-bottom: 15px
+    }
+}
 .article-4 {
     @include articles;
+    @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 380px;
+
+    }
+    @include medium {
+        height: 380px;
+    }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -185,17 +288,42 @@
 
     &__description {
         text-align: center;
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
 
     }
 }
-
+.section-5 {
+    @include section;
+    @include small {
+        margin-bottom: 100px
+    }
+    @include large {
+        @include section;
+        margin-bottom: 25px
+    }
+}
 .article-5 {
     @include articles;
+    @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 340px;
+
+    }
+    @include medium {
+        height: 380px;
+    }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -217,10 +345,17 @@
 
     &__description {
         text-align: center;
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
 
     }
