@@ -44,8 +44,11 @@
 }
 .tecnologia-1__image {
     @include images;
-    @include medium{
+    @include small{
         height: 200px;
+    }
+    @include medium{
+        height: 180px;
     }
     @include large {
         height: 180px;
@@ -67,17 +70,19 @@
 .section-1 {
     @include section;
     @include small {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         
     }
     @include medium {
+        height: 305px;
         margin-bottom: 40px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         
     }
     
 
     @include large {
-      
+        box-shadow: none;
         margin-bottom: 15px
     }
 }
@@ -90,10 +95,12 @@
        
 
     }
-
+    @include medium{
+       
+        box-shadow: none;
+    }
        
    
-  
 
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
@@ -124,9 +131,17 @@
         @include section;
         margin-bottom: 100px   
     }
+    @include medium {
+        height: 390px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        margin-bottom: 20px
+       
+    }
+  
     @include large {
         @include section;
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        box-shadow: none;
     }
 }
 .article-2 {
@@ -137,6 +152,7 @@
 
     }
     @include medium {
+        box-shadow: none;
         height: 390px;
     }
 
@@ -185,13 +201,16 @@
     }
 
     @include medium {
-        margin-bottom: 140px;
+        height: 390px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        margin-bottom: 20px
        
     }
   
     @include large {
         @include section;
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        box-shadow: none;
     }
 }
 .article-3 {
@@ -204,6 +223,7 @@
         
     }
     @include medium {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         height: 390px;
     }
     @include large {
@@ -249,11 +269,14 @@
         margin-bottom: 130px
     }
     @include medium {
-        margin-bottom: 140px
+        height: 390px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        margin-bottom: 20px
     }
     @include large {
         @include section;
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        box-shadow: none;
     }
 }
 .article-4 {
@@ -265,7 +288,8 @@
 
     }
     @include medium {
-        height: 380px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 390px;
     }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
@@ -308,9 +332,15 @@
     @include small {
         margin-bottom: 100px
     }
+    @include medium {
+        height: 390px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        margin-bottom: 20px
+    }
     @include large {
         @include section;
-        margin-bottom: 25px
+        margin-bottom: 25px;
+        box-shadow: none;
     }
 }
 .article-5 {
@@ -322,7 +352,7 @@
 
     }
     @include medium {
-        height: 380px;
+        box-shadow: none;
     }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);

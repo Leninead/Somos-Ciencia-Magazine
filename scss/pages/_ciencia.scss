@@ -52,7 +52,18 @@
 }
 
 
-
+.ciencia-1__image{
+    @include images;
+    @include small{
+        height: 200px;
+    }
+    @include medium{
+        height: 180px;
+    }
+    @include large {
+        height: 180px;
+    }
+}
 .ciencia__image {
     @include images;
     @include large {
@@ -67,6 +78,16 @@
 
 .ciencia-1 {
     @include articles;
+    @include small {
+        @include articles ($height:320px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+
+    }
+    @include medium {
+        box-shadow: none;
+        height: 390px;
+    }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -90,16 +111,31 @@
 
     &__description {
         text-align: center;
+         @include small {
+            display: none;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
     }
 }
 
 .ciencia-2 {
     @include articles;
+    @include small {
+        @include articles ($height:340px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+
+    }
+    @include medium {
+        height: 390px;
+    }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -123,16 +159,34 @@
 
     &__description {
         text-align: center;
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
     }
 }
 
 .ciencia-3 {
     @include articles;
+    @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 350px;
+
+    }
+    @include medium {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 390px;
+    }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -154,16 +208,34 @@
 
     &__description {
         text-align: center;
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
+
     }
 }
 
 .ciencia-4 {
     @include articles;
+    @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 380px;
+
+    }
+    @include medium {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 390px;
+    }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -185,17 +257,33 @@
 
     &__description {
         text-align: center;
-        @include large {
+        @include small {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
+        }
+        @include medium {
+            @include description;
+           
+           
         }
 
+        @include large {
+            @include description;
+        }
     }
 }
 
 .ciencia-5 {
     @include articles;
+        @include small {
+        @include articles;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 340px;
+
+    }
+    @include medium {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
+        height: 390px;
+    }
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -218,10 +306,17 @@
 
     &__description {
         text-align: center;
+        @include small {
+            @include description;
+        }
+        @include medium {
+            @include description;
+           
+           
+        }
+
         @include large {
             @include description;
-            font-family: 'Roboto Mono', monospace;
-            color: black;
         }
     }
 }
