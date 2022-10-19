@@ -536,10 +536,11 @@ main {
 .banner-2 {
     @include large {
         display: block;
+        height: 200px;
 
         &__publicidad {
             width: 100%;
-            height: 150px;
+            height: 200px;
         }
     }
 }
