@@ -64,7 +64,7 @@ header li a {
 }
 @media (min-width: 610px) {
   header li a {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
