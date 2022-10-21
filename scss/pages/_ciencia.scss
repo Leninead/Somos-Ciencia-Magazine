@@ -35,6 +35,14 @@
 
     .ciencia__h2 {
         @include h2title;
+        @include large {
+        cursor: default;
+        position: relative;
+        animation-name: mover-titulo;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-direction:alternate-reverse;
+        }
     }
 
 }

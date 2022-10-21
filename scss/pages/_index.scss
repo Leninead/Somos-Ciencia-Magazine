@@ -39,8 +39,36 @@ main {
 .titulo__destacado {
     @include large {
         width: 100%;
+        cursor: default;
+        position: relative;
+        animation-name: mover-titulo;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-direction:alternate-reverse;
+        
+       
+      
     }
+    
 }
+
+    @keyframes mover-titulo {
+    0% {
+        transform: translate(0px);
+        color: black;
+    }
+    50% {
+        transform: translate(200px);
+        color:$color-secundario
+    }
+    100% {
+        
+        color: $color-terciario
+    }
+    } 
+
+
+
 
 .destacado {
     @include medium {
@@ -56,10 +84,12 @@ main {
     @include large {
         grid-area: section1;
         margin-left: 40px;
+      
     }
 
 
 }
+ 
 
 .destacado__article {
 
