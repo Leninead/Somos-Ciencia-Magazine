@@ -1,9 +1,11 @@
 .business-logo__image {
     @include images;
+
     @include large {
         height: 300px;
     }
 }
+
 .container-business {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,7 @@
         grid-template-rows: repea(4, auto);
         gap: 10px;
     }
+
     @include large {
         display: flex;
         flex-direction: column;
@@ -33,23 +36,24 @@
 
     .business__h2 {
         @include h2title;
+
         @include large {
-        cursor: default;
-        position: relative;
-        animation-name: mover-titulo;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-        animation-direction:alternate-reverse;
+            cursor: default;
+            position: relative;
+            animation-name: mover-titulo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-direction: alternate-reverse;
         }
     }
 }
 
-.section-1{
+.section-1 {
     @include medium {
         grid-column: span 2;
         height: 260px;
     }
-    
+
 
 
 }
@@ -58,12 +62,15 @@
 
 .business-1__image {
     @include images;
-    @include small{
+
+    @include small {
         height: 200px;
     }
-    @include medium{
+
+    @include medium {
         height: 180px;
     }
+
     @include large {
         height: 180px;
     }
@@ -71,6 +78,7 @@
 
 .business__image {
     @include images;
+
     @include large {
         width: 250px;
         height: 200px;
@@ -86,23 +94,26 @@
 
 .business-1 {
     @include articles;
+
     @include small {
-        @include articles ($height:300px);
-        
+        @include articles ($height: 300px);
+
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         box-shadow: none;
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
-       
+
 
     }
 
@@ -120,18 +131,20 @@
 
     &__description {
         text-align: center;
+
         @include small {
             display: none;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
- 
+
         @include large {
             @include description;
-           
+
         }
     }
 
@@ -140,20 +153,23 @@
 
 .business-2 {
     @include articles;
+
     @include small {
-        @include articles ($height:300px);
-        
+        @include articles ($height: 330px);
+
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         box-shadow: none;
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
 
@@ -166,7 +182,7 @@
         }
     }
 
-    
+
 
     &__h2 {
         @include h2articles;
@@ -174,18 +190,21 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
- 
+
         @include large {
             @include description;
-           
+            line-height: 1.5;
+
         }
     }
 
@@ -193,20 +212,23 @@
 
 .business-3 {
     @include articles;
+
     @include small {
-        @include articles ($height:300px);
-        
+        @include articles ($height: 350px);
+
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         box-shadow: none;
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
 
@@ -225,38 +247,44 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
- 
+
         @include large {
             @include description;
-           
+            line-height: 1.5;
+
         }
     }
 }
 
 .business-4 {
     @include articles;
+
     @include small {
-        @include articles ($height:340px);
-        
+        @include articles ($height: 360px);
+
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         box-shadow: none;
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
 
@@ -275,18 +303,21 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
- 
+
         @include large {
             @include description;
-           
+            line-height: 1.5;
+
         }
     }
 
@@ -294,20 +325,23 @@
 
 .business-5 {
     @include articles;
+
     @include small {
-        @include articles ($height:330px);
-        
+        @include articles ($height: 330px);
+
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         box-shadow: none;
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
 
@@ -326,19 +360,22 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
- 
+
         @include large {
             @include description;
-           
-        }  
+            line-height: 1.5;
+
+        }
     }
 
 }

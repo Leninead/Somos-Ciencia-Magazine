@@ -17,7 +17,7 @@ header {
         text-align: center;
         font-size: 40px;
         transition: all 400ms ease;
- 
+
 
         @include large {
             font-size: 50px;
@@ -27,7 +27,7 @@ header {
             color: rgba(73, 222, 255, 0.5);
             box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
             transform: translatey(2%);
-          
+
 
         }
 

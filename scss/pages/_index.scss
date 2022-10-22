@@ -44,28 +44,30 @@ main {
         animation-name: mover-titulo;
         animation-duration: 3s;
         animation-iteration-count: 1;
-        animation-direction:alternate-reverse;
-        
-       
-      
+        animation-direction: alternate-reverse;
+
+
+
     }
-    
+
 }
 
-    @keyframes mover-titulo {
+@keyframes mover-titulo {
     0% {
         transform: translate(0px);
         color: black;
     }
+
     50% {
         transform: translate(200px);
-        color:$color-secundario
+        color: $color-secundario
     }
+
     100% {
-        
+
         color: $color-terciario
     }
-    } 
+}
 
 
 
@@ -84,12 +86,12 @@ main {
     @include large {
         grid-area: section1;
         margin-left: 40px;
-      
+
     }
 
 
 }
- 
+
 
 .destacado__article {
 
@@ -155,16 +157,26 @@ main {
 
     &__description {
 
-        font-family: 'Roboto Mono', monospace;
-        color: black;
+        text-align: center;
 
         @include small {
-            font-size: 14px;
-            text-align: center
+            @include description;
         }
 
+        @include medium {
+            @include description;
+
+
+        }
+
+        @include large {
+            @include description;
+            line-height: 1.5;
+        }
     }
+
 }
+
 
 
 .noticia-2 {
@@ -220,16 +232,27 @@ main {
 
     &__description {
 
-        font-family: 'Roboto Mono', monospace;
-        color: black;
+        text-align: center;
 
         @include small {
-            font-size: 14px;
-            text-align: center
+            @include description;
+        }
+
+        @include medium {
+            @include description;
+
+
+        }
+
+        @include large {
+            @include description;
+            line-height: 1.5;
         }
     }
 
 }
+
+
 
 .noticia-3 {
     @include articles();
@@ -283,17 +306,24 @@ main {
 
     &__description {
 
-        font-family: 'Roboto Mono', monospace;
-        color: black;
 
         @include small {
-            font-size: 14px;
-            text-align: center
+            @include description;
         }
 
+        @include medium {
+            @include description;
+
+
+        }
+
+        @include large {
+
+            @include description;
+            line-height: 1.5;
+
+        }
     }
-
-
 }
 
 //Seccion Latinoamerica//
@@ -386,13 +416,13 @@ main {
 
     @include small {
         font-size: 14px;
-        text-align: center
+
     }
 
 
     @include large {
-        font-family: 'Roboto Mono', monospace;
-        color: black;
+        @include description;
+        line-height: 1.5;
     }
 
 }
@@ -433,14 +463,15 @@ main {
 
 .titulo-2__description {
     @include description;
+
     @include small {
         font-size: 14px;
-        text-align: center
+
     }
 
     @include large {
-        font-family: 'Roboto Mono', monospace;
-        color: black;
+        @include description;
+        line-height: 1.5;
     }
 }
 
@@ -481,14 +512,15 @@ main {
 
 .titulo-3__description {
     @include description;
+
     @include small {
         font-size: 14px;
-        text-align: center
+
     }
 
     @include large {
-        font-family: 'Roboto Mono', monospace;
-        color: black;
+        @include description;
+        line-height: 1.5;
     }
 }
 
@@ -529,14 +561,15 @@ main {
 
 .titulo-4__description {
     @include description;
+
     @include small {
         font-size: 14px;
-        text-align: center
+
     }
 
     @include large {
-        font-family: 'Roboto Mono', monospace;
-        color: black;
+        @include description;
+        line-height: 1.5;
     }
 }
 

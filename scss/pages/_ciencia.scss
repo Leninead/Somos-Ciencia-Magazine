@@ -1,9 +1,11 @@
 .ciencia-logo__image {
     @include images;
+
     @include large {
         height: 300px;
     }
 }
+
 .container-ciencia {
     display: flex;
     flex-direction: column;
@@ -15,6 +17,7 @@
         gap: 10px;
 
     }
+
     @include large {
         display: flex;
         flex-direction: column;
@@ -35,13 +38,14 @@
 
     .ciencia__h2 {
         @include h2title;
+
         @include large {
-        cursor: default;
-        position: relative;
-        animation-name: mover-titulo;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-        animation-direction:alternate-reverse;
+            cursor: default;
+            position: relative;
+            animation-name: mover-titulo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-direction: alternate-reverse;
         }
     }
 
@@ -56,24 +60,29 @@
         grid-column: span 2;
         height: 260px;
     }
-  
+
 }
 
 
-.ciencia-1__image{
+.ciencia-1__image {
     @include images;
-    @include small{
+
+    @include small {
         height: 200px;
     }
-    @include medium{
+
+    @include medium {
         height: 180px;
     }
+
     @include large {
         height: 180px;
     }
 }
+
 .ciencia__image {
     @include images;
+
     @include large {
         width: 250px;
         height: 200px;
@@ -86,11 +95,13 @@
 
 .ciencia-1 {
     @include articles;
+
     @include small {
-        @include articles ($height:320px);
+        @include articles ($height: 300px);
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         box-shadow: none;
         height: 390px;
@@ -99,7 +110,7 @@
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 250px, $width: 70%);
         transition: all 400ms ease;
 
@@ -119,31 +130,37 @@
 
     &__description {
         text-align: center;
-         @include small {
+
+        @include small {
             display: none;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
 
         @include large {
             @include description;
+            line-height: 1.5;
         }
     }
 }
 
 .ciencia-2 {
     @include articles;
+
     @include small {
-        @include articles ($height:340px);
+        @include articles ($height: 340px);
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
 
     }
+
     @include medium {
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -162,34 +179,39 @@
 
     &__h2 {
         @include h2articles;
-        
+
     }
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
 
         @include large {
             @include description;
+            line-height: 1.5;
         }
     }
 }
 
 .ciencia-3 {
     @include articles;
+
     @include small {
         @include articles;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         height: 350px;
 
     }
+
     @include medium {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         height: 390px;
@@ -216,17 +238,20 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
 
         @include large {
             @include description;
+            line-height: 1.5;
         }
 
     }
@@ -234,16 +259,19 @@
 
 .ciencia-4 {
     @include articles;
+
     @include small {
         @include articles;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
-        height: 380px;
+        height: 360px;
 
     }
+
     @include medium {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
@@ -265,37 +293,43 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
 
         @include large {
             @include description;
+            line-height: 1.5;
         }
     }
 }
 
 .ciencia-5 {
     @include articles;
-        @include small {
+
+    @include small {
         @include articles;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         height: 340px;
 
     }
+
     @include medium {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 50);
         height: 390px;
     }
+
     @include large {
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
         margin: 10px;
-        
+
         @include articles ($height: 230px, $width: 70%);
         transition: all 400ms ease;
 
@@ -314,17 +348,20 @@
 
     &__description {
         text-align: center;
+
         @include small {
             @include description;
         }
+
         @include medium {
             @include description;
-           
-           
+
+
         }
 
         @include large {
             @include description;
+            line-height: 1.5;
         }
     }
 }
