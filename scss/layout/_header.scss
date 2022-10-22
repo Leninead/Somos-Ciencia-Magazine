@@ -19,6 +19,7 @@ header {
         transition: all 400ms ease;
         font-family: 'Michroma', sans-serif;
         cursor: default;
+        @include medium{font-size: 30px;}
 
 
         @include large {
