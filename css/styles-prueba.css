@@ -299,6 +299,7 @@ footer {
 }
 .newsletter__h4 {
   margin-bottom: 5px;
+  cursor: default;
 }
 
 @media (min-width: 320px) {
@@ -315,6 +316,12 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 5px;
+  }
+}
+
+@media (min-width: 610px) {
+  .newsletter__h4 {
+    justify-content: flex-end;
   }
 }
 
@@ -376,13 +383,19 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+@media (min-width: 610px) {
+  .titulo {
+    height: 8vh;
+  }
 }
 @media (min-width: 1200px) {
   .titulo {
     grid-area: section0;
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin-left: 40px;
-    height: 50px;
     background-color: rgba(128, 128, 128, 0.322);
     height: 7vh;
     width: 91%;
@@ -1187,6 +1200,12 @@ footer {
   height: 7vh;
   width: 100%;
 }
+@media (min-width: 610px) {
+  .titulo-tecnologia {
+    grid-column: span 2;
+    height: 8vh;
+  }
+}
 .titulo-tecnologia .titulo__h2 {
   color: rgba(0, 0, 0, 0.555);
   font-size: 30px;
@@ -1202,11 +1221,6 @@ footer {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-direction: alternate-reverse;
-  }
-}
-@media (min-width: 610px) {
-  .titulo-tecnologia {
-    grid-column: span 2;
   }
 }
 
@@ -1809,10 +1823,13 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  margin-bottom: 10px;
 }
 @media (min-width: 610px) {
   .ciencia-titulo {
     grid-column: span 2;
+    height: 8vh;
   }
 }
 @media (min-width: 1200px) {
@@ -2349,10 +2366,13 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  margin-bottom: 10px;
 }
 @media (min-width: 610px) {
   .universo-titulo {
     grid-column: span 2;
+    height: 8vh;
   }
 }
 @media (min-width: 1200px) {
@@ -2885,6 +2905,7 @@ footer {
 @media (min-width: 610px) {
   .business-titulo {
     grid-column: span 2;
+    height: 8vh;
   }
 }
 .business-titulo .business__h2 {
@@ -3306,7 +3327,7 @@ footer {
 @media (min-width: 320px) {
   .business-5 {
     width: 100%;
-    height: 330px;
+    height: 340px;
     margin-bottom: 20px;
     padding: 10px;
     color: black;

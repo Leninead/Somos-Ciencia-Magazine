@@ -26,6 +26,12 @@
 
 .titulo-tecnologia {
     @include maintitle;
+    
+    @include medium {
+        grid-column: span 2;
+        height: 8vh;
+    }
+   
 
     .titulo__h2 {
         @include h2title;
@@ -42,9 +48,7 @@
     }
 
 
-    @include medium {
-        grid-column: span 2;
-    }
+   
 }
 
 

@@ -27,9 +27,11 @@
 
 .universo-titulo {
     @include maintitle;
+    @include boxshadow;
 
     @include medium {
         grid-column: span 2;
+        height: 8vh;
     }
 
     @include large {
