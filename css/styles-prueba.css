@@ -30,18 +30,23 @@ header {
 header h1 {
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   transition: all 400ms ease;
+  font-family: "Michroma", sans-serif;
+  cursor: default;
 }
 @media (min-width: 1200px) {
   header h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
-header h1:hover {
-  color: rgba(73, 222, 255, 0.5);
-  box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
-  transform: translatey(2%);
+@media (min-width: 1200px) {
+  header h1:hover {
+    color: rgba(73, 222, 255, 0.5);
+    box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+    transform: translatey(2%);
+    cursor: pointer;
+  }
 }
 header nav {
   width: 100%;
@@ -59,7 +64,7 @@ header ul {
 header li a {
   color: white;
   font-weight: 900;
-  font-size: 10px;
+  font-size: 9px;
   font-family: "Michroma", sans-serif;
 }
 @media (min-width: 610px) {
@@ -879,7 +884,7 @@ footer {
 @media (min-width: 320px) {
   .latino__noticia-2 {
     width: 100%;
-    height: 350px;
+    height: 370px;
     margin-bottom: 20px;
     padding: 10px;
     color: black;
