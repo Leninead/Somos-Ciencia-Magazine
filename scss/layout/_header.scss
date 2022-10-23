@@ -19,7 +19,10 @@ header {
         transition: all 400ms ease;
         font-family: 'Michroma', sans-serif;
         cursor: default;
-        @include medium{font-size: 30px;}
+
+        @include medium {
+            font-size: 30px;
+        }
 
 
         @include large {
@@ -28,10 +31,10 @@ header {
 
         &:hover {
             @include large {
-            color: rgba(73, 222, 255, 0.5);
-            box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
-            transform: translatey(2%);
-            cursor: pointer;
+                color: rgba(73, 222, 255, 0.5);
+                box-shadow: 5px 15px 15px rgba(73, 222, 255, 0.5);
+                transform: translatey(2%);
+                cursor: pointer;
             }
 
         }
@@ -58,7 +61,7 @@ header {
         font-weight: 900;
         font-size: 9px;
         font-family: 'Michroma', sans-serif;
- 
+
         @include medium {
             font-size: 12px;
         }

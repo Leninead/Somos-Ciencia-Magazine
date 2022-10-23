@@ -35,11 +35,11 @@
         padding: 0px;
     }
 
-    @include large{
+    @include large {
         padding: 5px;
     }
 
- 
+
 
     .universo__h2 {
         @include h2title;

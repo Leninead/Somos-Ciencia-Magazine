@@ -98,7 +98,7 @@ footer {
     @include medium {
         display: flex;
         flex-direction: column;
-       
+
         padding: 5px;
 
 
@@ -108,8 +108,8 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 5px;
- 
-        
+
+
 
 
     }
@@ -118,8 +118,8 @@ footer {
     &__h4 {
         margin-bottom: 5px;
         cursor: default;
-     
-       
+
+
     }
 
 }
@@ -133,8 +133,8 @@ form {
         align-items: flex-start baseline;
         gap: 5px
     }
-  
-    
+
+
     @include large {
         display: flex;
         flex-direction: row;
@@ -145,11 +145,13 @@ form {
 
 
 }
+
 .newsletter__h4 {
     @include medium {
         justify-content: flex-end;
     }
 }
+
 .fname {
     border: none;
     transition: all 400ms ease;

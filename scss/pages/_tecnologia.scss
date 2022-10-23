@@ -26,16 +26,17 @@
 
 .titulo-tecnologia {
     @include maintitle;
-    
+
     @include medium {
         grid-column: span 2;
         height: 8vh;
         padding: 0px;
     }
-    @include large{
+
+    @include large {
         padding: 5px;
     }
-   
+
 
     .titulo__h2 {
         @include h2title;
@@ -52,7 +53,7 @@
     }
 
 
-   
+
 }
 
 
