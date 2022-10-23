@@ -383,6 +383,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  padding: 10px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -399,6 +400,7 @@ footer {
     background-color: rgba(128, 128, 128, 0.322);
     height: 7vh;
     width: 91%;
+    padding: 10px;
   }
 }
 .titulo__destacado {
@@ -768,13 +770,22 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  padding: 10px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+@media (min-width: 610px) {
+  .latino-titulo {
+    height: 8vh;
+  }
 }
 @media (min-width: 1200px) {
   .latino-titulo {
-    box-shadow: 0px 10px 10px rgb(0, 0, 0);
     background-color: rgba(128, 128, 128, 0.322);
     height: 7vh;
     width: 95%;
+    padding: 10px;
+    padding: 0px;
   }
 }
 .latino-titulo__h2 {
@@ -1199,6 +1210,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  padding: 10px;
 }
 @media (min-width: 610px) {
   .titulo-tecnologia {
@@ -1823,6 +1835,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  padding: 10px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -2366,6 +2379,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  padding: 10px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -2899,6 +2913,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
+  padding: 10px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }

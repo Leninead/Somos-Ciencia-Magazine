@@ -336,10 +336,16 @@ main {
 
 .latino-titulo {
     @include maintitle;
+    @include boxshadow;
+    @include medium {
+    
+        height: 8vh;
+    }
 
     @include large {
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 50);
+       
         @include maintitle ($width: 95%);
+        padding: 0px;
 
     }
 
@@ -347,6 +353,7 @@ main {
     &__h2 {
 
         @include h2title;
+       
     }
 }
 
