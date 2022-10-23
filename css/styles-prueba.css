@@ -383,13 +383,14 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 @media (min-width: 610px) {
   .titulo {
     height: 8vh;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -397,10 +398,8 @@ footer {
     grid-area: section0;
     box-shadow: 0px 10px 10px rgb(0, 0, 0);
     margin-left: 40px;
-    background-color: rgba(128, 128, 128, 0.322);
-    height: 7vh;
     width: 91%;
-    padding: 10px;
+    padding: 5px;
   }
 }
 .titulo__destacado {
@@ -770,21 +769,19 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 @media (min-width: 610px) {
   .latino-titulo {
     height: 8vh;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
   .latino-titulo {
-    background-color: rgba(128, 128, 128, 0.322);
-    height: 7vh;
     width: 95%;
-    padding: 10px;
     padding: 0px;
   }
 }
@@ -1210,12 +1207,18 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 @media (min-width: 610px) {
   .titulo-tecnologia {
     grid-column: span 2;
     height: 8vh;
+    padding: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .titulo-tecnologia {
+    padding: 5px;
   }
 }
 .titulo-tecnologia .titulo__h2 {
@@ -1835,7 +1838,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -1843,12 +1846,12 @@ footer {
   .ciencia-titulo {
     grid-column: span 2;
     height: 8vh;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
   .ciencia-titulo {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
+    padding: 5px;
   }
 }
 .ciencia-titulo .ciencia__h2 {
@@ -2379,7 +2382,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -2387,12 +2390,12 @@ footer {
   .universo-titulo {
     grid-column: span 2;
     height: 8vh;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
   .universo-titulo {
-    box-shadow: 0px 5px 10px rgb(0, 0, 0);
-    margin-bottom: 10px;
+    padding: 5px;
   }
 }
 .universo-titulo .universo__h2 {
@@ -2913,7 +2916,7 @@ footer {
   background-color: rgba(128, 128, 128, 0.322);
   height: 7vh;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0px 5px 10px rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -2921,6 +2924,12 @@ footer {
   .business-titulo {
     grid-column: span 2;
     height: 8vh;
+    padding: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .business-titulo {
+    padding: 5px;
   }
 }
 .business-titulo .business__h2 {
